@@ -1,1 +1,1 @@
-# Course_Management_for_Mac
+# Course Management for Mac
