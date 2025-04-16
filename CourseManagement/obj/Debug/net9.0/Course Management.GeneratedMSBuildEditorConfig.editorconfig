@@ -20,6 +20,42 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/Areas/Admin/Views/Main/Main.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvTWFpbi9NYWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/Areas/Admin/Views/Main/ManageCourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvTWFpbi9NYW5hZ2VDb3Vyc2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/Areas/Admin/Views/Main/ManageStudents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvTWFpbi9NYW5hZ2VTdHVkZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/Areas/Admin/Views/ManageStudents/AddStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvTWFuYWdlU3R1ZGVudHMvQWRkU3R1ZGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/Areas/Admin/Views/ManageStudents/EditStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvTWFuYWdlU3R1ZGVudHMvRWRpdFN0dWRlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/Areas/Users/Views/Login/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvVXNlcnMvVmlld3MvTG9naW4vRm9yZ290UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/Areas/Users/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvVXNlcnMvVmlld3MvTG9naW4vTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/Areas/Users/Views/Login/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvVXNlcnMvVmlld3MvTG9naW4vUmVzZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/Areas/Users/Views/Register/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvVXNlcnMvVmlld3MvUmVnaXN0ZXIvUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/Views/Home/Course.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db3Vyc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
