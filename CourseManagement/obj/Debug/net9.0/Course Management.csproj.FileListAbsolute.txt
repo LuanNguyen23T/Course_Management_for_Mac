@@ -1,0 +1,356 @@
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/appsettings.Development.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/appsettings.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Course Management.staticwebassets.runtime.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Course Management.staticwebassets.endpoints.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Course Management
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Course Management.deps.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Course Management.runtimeconfig.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Course Management.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Course Management.pdb
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/Course Management.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/Course Management.AssemblyInfoInputs.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/Course Management.AssemblyInfo.cs
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/Course Management.csproj.CoreCompileInputs.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/Course Management.MvcApplicationPartsAssemblyInfo.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/Course Management.RazorAssemblyInfo.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/Course Management.RazorAssemblyInfo.cs
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/Course Management.sourcelink.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/scopedcss/bundle/Course Management.styles.css
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/scopedcss/projectbundle/Course Management.bundle.scp.css
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/tm1q2cpn3u-61n19gt1b8.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/f6fsnz0w0u-xtxxf3hu2r.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/yv7dzhj508-bqjiyaj88i.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/fenva7f2s1-c2jlpeoesf.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/i7s1yvcrz1-erw9l3u2r3.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/784ntcm165-aexeepp0ev.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/r8fh7ovr3p-d7shbmvgxk.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/qpdiavia0m-ausgxo2sd3.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/z4eidhs07q-k8d9w2qqmf.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/9hpuwsjndo-cosvhxvwiu.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/v7wc2jjvfl-ub07r2b239.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/vpuxv2ip06-fvhpjtyr6v.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/8a9rsb4lob-b7pk76d08c.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/1669933l5s-fsbi9cje9m.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/vj80z935xz-rzd6atqjts.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/xmk9lm3g4s-ee0r1s7dh0.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/nystyip37s-dxx9fxp4il.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/needh0qv75-jd9uben2k1.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/jytyn5ivzh-khv3u5hwcm.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/5vok3hr26s-r4e9w2rdcm.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/ori7oy579m-lcd1t2u6c8.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/xsewplyggk-c2oey78nd0.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/qj9lwjhf47-tdbxkamptv.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/98fgzh01oe-j5mq2jizvt.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/7br22vrhkl-06098lyss8.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/et57ww1f6y-nvvlpmu67g.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/jyyyqu8b31-s35ty4nyc5.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/sn6h9iqq9q-pj5nd1wqec.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/3r43zerpnh-46ein0sx1k.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/g4sm0vgj9b-v0zj4ognzu.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/k44ze3n7zf-37tfw0ft22.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/lp3cheyif7-hrwsygsryq.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/j3w8lzsh2x-pk9g2wxc8p.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/89cw1qa5dw-ft3s53vfgj.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/96i9cpue4r-6cfz1n2cew.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/axi7c9kuua-6pdc2jztkx.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/rrudru4df0-493y06b0oq.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/o4svozlsyp-iovd86k7lj.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/1oz2w7lj53-vr1egmr9el.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/7mzqsgggd6-kbrnm935zg.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/5qx44txjy4-jj8uyg4cgr.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/s7cij7ui4s-y7v9cxd14o.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/jluoj844f2-notf2xhcfb.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/iwdmv2dwmv-h1s4sie4z3.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/camv6l8g3i-63fj8s7r0e.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/4dukc2k456-0j3bgjxly4.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/gg0xl0cgjo-47otxtyo56.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/7n0vvc06cl-4v8eqarkd7.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/pzopzpql7i-356vix0kms.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/bv6imwh9nj-83jwlth58m.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/ej9f2wmzxg-mrlpezrjn3.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/3ombnvjane-lzl9nlhx6b.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/0810ioh9nn-ag7o75518u.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/v5fnrozmxf-x0q3zqp4vz.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/7xekwwui99-0i3buxo5is.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/see06jzrnc-o1o13a6vjx.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/1cstqf8e7s-ttgo8qnofa.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/z31o0tjve4-2z0ns9nrw6.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/zs8scgna9o-muycvpuwrr.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/gldjybjkbp-87fc7y1x7t.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/cibmsg9g27-mlv21k5csn.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/z073xrp2ew-yc3633qpuy.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/as634ligcu-yc3633qpuy.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/staticwebassets.build.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/staticwebassets.development.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/staticwebassets/msbuild.Course Management.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/staticwebassets/msbuild.Course Management.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/staticwebassets/msbuild.build.Course Management.props
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.Course Management.props
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.Course Management.props
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/staticwebassets.pack.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/Course Management.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/refint/Course Management.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/Course Management.pdb
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/Course Management.genruntimeconfig.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/ref/Course Management.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/Course Management.csproj.AssemblyReference.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/MySqlConnector.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Pomelo.EntityFrameworkCore.MySql.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/Course M.B2B5A47C.Up2Date
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Humanizer.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Microsoft.CodeAnalysis.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/Mono.TextTemplating.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/System.CodeDom.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/System.Composition.AttributedModel.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/System.Composition.Convention.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/System.Composition.Hosting.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/System.Composition.Runtime.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/System.Composition.TypedParts.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course Management/obj/Debug/net9.0/compressed/hb4u6pyv77-7lsiuyhmyr.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course_Management/obj/Debug/net9.0/Course Management.csproj.AssemblyReference.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course_Management/obj/Debug/net9.0/Course Management.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course_Management/obj/Debug/net9.0/Course Management.AssemblyInfoInputs.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course_Management/obj/Debug/net9.0/Course Management.AssemblyInfo.cs
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course_Management/obj/Debug/net9.0/Course Management.csproj.CoreCompileInputs.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course_Management/obj/Debug/net9.0/Course Management.MvcApplicationPartsAssemblyInfo.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course_Management/obj/Debug/net9.0/Course Management.RazorAssemblyInfo.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course_Management/obj/Debug/net9.0/Course Management.RazorAssemblyInfo.cs
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course_Management/obj/Debug/net9.0/Course Management.sourcelink.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course_Management/obj/Debug/net9.0/Course Management.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course_Management/obj/Debug/net9.0/refint/Course Management.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/Course_Management/obj/Debug/net9.0/Course Management.pdb
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/Course Management.csproj.AssemblyReference.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/Course Management.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/Course Management.AssemblyInfoInputs.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/Course Management.AssemblyInfo.cs
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/Course Management.csproj.CoreCompileInputs.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/Course Management.MvcApplicationPartsAssemblyInfo.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/Course Management.RazorAssemblyInfo.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/Course Management.RazorAssemblyInfo.cs
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/Course Management.sourcelink.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/Course Management.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/refint/Course Management.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/Course Management.pdb
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/appsettings.Development.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/appsettings.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Course Management.staticwebassets.endpoints.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Course Management.staticwebassets.runtime.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Course Management
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Course Management.deps.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Course Management.runtimeconfig.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Course Management.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Course Management.pdb
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Humanizer.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Microsoft.CodeAnalysis.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Mono.TextTemplating.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/MySqlConnector.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/Pomelo.EntityFrameworkCore.MySql.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/System.CodeDom.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/System.Composition.AttributedModel.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/System.Composition.Convention.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/System.Composition.Hosting.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/System.Composition.Runtime.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/System.Composition.TypedParts.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/scopedcss/bundle/Course Management.styles.css
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/scopedcss/projectbundle/Course Management.bundle.scp.css
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/hb4u6pyv77-7lsiuyhmyr.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/tm1q2cpn3u-61n19gt1b8.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/f6fsnz0w0u-xtxxf3hu2r.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/yv7dzhj508-bqjiyaj88i.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/fenva7f2s1-c2jlpeoesf.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/i7s1yvcrz1-erw9l3u2r3.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/784ntcm165-aexeepp0ev.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/r8fh7ovr3p-d7shbmvgxk.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/qpdiavia0m-ausgxo2sd3.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/z4eidhs07q-k8d9w2qqmf.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/9hpuwsjndo-cosvhxvwiu.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/v7wc2jjvfl-ub07r2b239.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/vpuxv2ip06-fvhpjtyr6v.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/8a9rsb4lob-b7pk76d08c.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/1669933l5s-fsbi9cje9m.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/vj80z935xz-rzd6atqjts.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/xmk9lm3g4s-ee0r1s7dh0.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/nystyip37s-dxx9fxp4il.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/needh0qv75-jd9uben2k1.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/jytyn5ivzh-khv3u5hwcm.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/5vok3hr26s-r4e9w2rdcm.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/ori7oy579m-lcd1t2u6c8.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/xsewplyggk-c2oey78nd0.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/qj9lwjhf47-tdbxkamptv.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/98fgzh01oe-j5mq2jizvt.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/7br22vrhkl-06098lyss8.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/et57ww1f6y-nvvlpmu67g.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/jyyyqu8b31-s35ty4nyc5.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/sn6h9iqq9q-pj5nd1wqec.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/3r43zerpnh-46ein0sx1k.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/g4sm0vgj9b-v0zj4ognzu.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/k44ze3n7zf-37tfw0ft22.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/lp3cheyif7-hrwsygsryq.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/j3w8lzsh2x-pk9g2wxc8p.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/89cw1qa5dw-ft3s53vfgj.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/96i9cpue4r-6cfz1n2cew.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/axi7c9kuua-6pdc2jztkx.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/rrudru4df0-493y06b0oq.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/o4svozlsyp-iovd86k7lj.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/1oz2w7lj53-vr1egmr9el.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/7mzqsgggd6-kbrnm935zg.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/5qx44txjy4-jj8uyg4cgr.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/s7cij7ui4s-y7v9cxd14o.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/jluoj844f2-notf2xhcfb.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/iwdmv2dwmv-h1s4sie4z3.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/camv6l8g3i-63fj8s7r0e.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/4dukc2k456-0j3bgjxly4.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/gg0xl0cgjo-47otxtyo56.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/7n0vvc06cl-4v8eqarkd7.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/pzopzpql7i-356vix0kms.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/bv6imwh9nj-83jwlth58m.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/ej9f2wmzxg-mrlpezrjn3.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/3ombnvjane-lzl9nlhx6b.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/0810ioh9nn-ag7o75518u.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/v5fnrozmxf-x0q3zqp4vz.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/7xekwwui99-0i3buxo5is.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/see06jzrnc-o1o13a6vjx.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/1cstqf8e7s-ttgo8qnofa.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/z31o0tjve4-2z0ns9nrw6.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/zs8scgna9o-muycvpuwrr.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/gldjybjkbp-87fc7y1x7t.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/cibmsg9g27-mlv21k5csn.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/z073xrp2ew-yc3633qpuy.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/compressed/as634ligcu-yc3633qpuy.gz
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/staticwebassets.build.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/staticwebassets.development.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/staticwebassets/msbuild.Course Management.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/staticwebassets/msbuild.Course Management.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/staticwebassets/msbuild.build.Course Management.props
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.Course Management.props
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.Course Management.props
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/staticwebassets.pack.json
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/Course M.B2B5A47C.Up2Date
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/Course Management.genruntimeconfig.cache
+/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/obj/Debug/net9.0/ref/Course Management.dll

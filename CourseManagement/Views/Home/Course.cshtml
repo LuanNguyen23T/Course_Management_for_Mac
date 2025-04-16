@@ -1,0 +1,35 @@
+@model IEnumerable<CourseManagement.ViewModels.Users.CourseViewModel>
+
+<div class="container mt-4">
+    <h1 class="mb-4">Danh sách các khóa học</h1>
+
+    <div class="row g-3">
+        @if (Model != null && Model.Any())
+        {
+            foreach (var course in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="/Course/Details/@course.MaKhoaHoc" target="_blank" class="text-decoration-none" style="color: black;">
+                                    @course.TenKhoaHoc
+                                </a>
+                            </h5>
+                            <p class="card-text">
+                                <strong>Giảng viên:</strong> @course.GiangVien<br />
+                                <strong>Thời gian khai giảng:</strong> @course.ThoiGianKhaiGiang.ToString("dd/MM/yyyy")<br />
+                                <strong>Học phí:</strong> @string.Format("{0:N0} VND", course.HocPhi)<br />
+                                <strong>Số lượng sinh viên tối đa:</strong> @course.SoLuongSinhVienToiDa
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>Không có khóa học nào để hiển thị.</p>
+        }
+    </div>
+</div>
