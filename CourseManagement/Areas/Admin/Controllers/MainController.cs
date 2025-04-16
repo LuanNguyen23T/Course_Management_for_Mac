@@ -37,26 +37,21 @@ namespace CourseManagement.Areas.Admin.Controllers
             return View(students);
         }
 
-        // Quản lý khóa học  
         public IActionResult ManageCourses()
         {
+            // Lấy danh sách các khóa học với thông tin cơ bản
+            var courses = _context.KhoaHocs
+                .Select(k => new CourseViewModel
+                {
+                    MaKhoaHoc = k.MaKhoaHoc,
+                    TenKhoaHoc = k.TenKhoaHoc,
+                    GiangVien = k.GiangVien,
+                    ThoiGianKhaiGiang = k.ThoiGianKhaiGiang
+                })
+                .ToList();
 
-            return View();
-        }
-
-        public IActionResult CourseDetails(int id)
-        {
-            // Tìm khóa học theo ID (chuyển đổi id thành string)
-            var course = _context.KhoaHocs.FirstOrDefault(k => k.MaKhoaHoc == id.ToString());
-
-            if (course == null)
-            {
-                // Nếu không tìm thấy khóa học, trả về trang lỗi hoặc thông báo
-                return NotFound("Khóa học không tồn tại.");
-            }
-
-            // Trả về view với thông tin khóa học
-            return View(course);
+            // Trả về view với danh sách khóa học
+            return View(courses);
         }
     }
 }
