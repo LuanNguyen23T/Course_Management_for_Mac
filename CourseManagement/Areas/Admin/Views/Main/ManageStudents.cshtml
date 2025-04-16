@@ -17,9 +17,9 @@
         const studentId = button.getAttribute('data-student-id');
         // Update the modal's content
         const modalBody = deleteModal.querySelector('#studentName');
-        const confirmButton = deleteModal.querySelector('#confirmDeleteButton');
+        const hiddenInput = deleteModal.querySelector('#studentId');
         modalBody.textContent = studentName;
-        confirmButton.href = `/Admin/ManageStudents/DeleteStudent/${studentId}`;
+        hiddenInput.value = studentId;
     });
 </script>
 
@@ -80,11 +80,11 @@
                                     <a href="/Admin/ManageStudents/EditStudent/@student.MaHocVien" class="btn btn-secondary btn-sm">
                                         <i class="bi bi-pencil"></i> Sửa
                                     </a>
-                                    <a href="javascript:void(0);" class="btn btn-dark btn-sm"
-                                       data-bs-toggle="modal"
-                                       data-bs-target="#deleteModal"
-                                       data-student-name="@student.HoTen"
-                                       data-student-id="@student.MaHocVien">
+                                    <a href="#" class="btn btn-dark btn-sm"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal"
+                                    data-student-name="@student.HoTen"
+                                    data-student-id="@student.MaHocVien">
                                         <i class="bi bi-trash"></i> Xóa
                                     </a>
                                 </td>
@@ -116,7 +116,10 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
-                <a id="confirmDeleteButton" href="#" class="btn btn-danger">Xóa</a>
+                <form id="deleteForm" method="post" asp-action="DeleteStudent" asp-controller="ManageStudents" asp-area="Admin">
+                    <input type="hidden" name="id" id="studentId" />
+                    <button type="submit" class="btn btn-danger">Xóa</button>
+                </form>
             </div>
         </div>
     </div>
