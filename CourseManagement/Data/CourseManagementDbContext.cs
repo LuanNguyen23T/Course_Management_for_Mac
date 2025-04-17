@@ -20,7 +20,9 @@ namespace CourseManagement.Data
             modelBuilder.Entity<KhoaHoc>(entity =>
             {
                 entity.Property(e => e.HocPhi)
-                      .HasColumnType("decimal(18,2)"); 
+                      .HasColumnType("decimal(18,2)");
+                entity.Property(e => e.MoTa)
+                      .HasColumnType("longtext"); // Configure MoTa property
             });
         }
 

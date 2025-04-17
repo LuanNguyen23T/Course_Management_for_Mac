@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace CourseManagement.Migrations
+namespace Course_Management.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration
@@ -65,7 +65,13 @@ namespace CourseManagement.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     ThoiGianKhaiGiang = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     HocPhi = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    SoLuongSinhVienToiDa = table.Column<int>(type: "int", nullable: false)
+                    SoLuongSinhVienToiDa = table.Column<int>(type: "int", nullable: false),
+                    MoTa = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    LinhVuc = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Url = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
                 {

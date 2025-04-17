@@ -9,10 +9,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace CourseManagement.Migrations
+namespace Course_Management.Migrations
 {
     [DbContext(typeof(CourseManagementDbContext))]
-    [Migration("20250416040807_InitialCreate")]
+    [Migration("20250417144550_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -82,6 +82,13 @@ namespace CourseManagement.Migrations
                     b.Property<decimal>("HocPhi")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<string>("LinhVuc")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("MoTa")
+                        .HasColumnType("longtext");
+
                     b.Property<int>("SoLuongSinhVienToiDa")
                         .HasColumnType("int");
 
@@ -91,6 +98,9 @@ namespace CourseManagement.Migrations
 
                     b.Property<DateTime>("ThoiGianKhaiGiang")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Url")
+                        .HasColumnType("longtext");
 
                     b.HasKey("MaKhoaHoc");
 

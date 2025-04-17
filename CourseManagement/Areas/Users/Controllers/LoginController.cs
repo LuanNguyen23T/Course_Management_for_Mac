@@ -81,22 +81,48 @@ namespace CourseManagement.Areas.Users.Controllers
                 return View(model);
             }
 
-            TempData["MaHocVien"] = user.MaHocVien; // Pass user information to ResetPassword
-            return RedirectToAction("ResetPassword", "Login");
+            // Simulate sending an email with a reset link
+            TempData["MaHocVien"] = user.MaHocVien; // Store MaHocVien in TempData
+            TempData["Message"] = "Một liên kết đặt lại mật khẩu đã được gửi đến email của bạn.";
+            
+            // Redirect to ResetPassword page
+            return RedirectToAction("ResetPassword");
+        }
+
+        [HttpGet]
+        public IActionResult NewResetPasswordPage()
+        {
+            if (!TempData.ContainsKey("MaHocVien"))
+            {
+                return RedirectToAction("ForgotPassword");
+            }
+
+            var maHocVien = TempData["MaHocVien"]?.ToString();
+            TempData["MaHocVien"] = maHocVien; // Reassign to ensure persistence
+
+            var model = new LoginViewModel
+            {
+                MaHocVien = maHocVien
+            };
+
+            return View(model); // Render a new view for resetting the password
         }
 
         [HttpGet]
         public IActionResult ResetPassword()
         {
-            var model = new LoginViewModel
-            {
-                MaHocVien = TempData["MaHocVien"]?.ToString()
-            };
-
-            if (string.IsNullOrEmpty(model.MaHocVien))
+            if (!TempData.ContainsKey("MaHocVien"))
             {
                 return RedirectToAction("ForgotPassword");
             }
+
+            var maHocVien = TempData["MaHocVien"]?.ToString();
+            TempData["MaHocVien"] = maHocVien; // Reassign to ensure persistence
+
+            var model = new LoginViewModel
+            {
+                MaHocVien = maHocVien
+            };
 
             return View(model);
         }
