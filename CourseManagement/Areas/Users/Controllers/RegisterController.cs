@@ -28,25 +28,25 @@ namespace CourseManagement.Areas.Users.Controllers
         {
             if (!ModelState.IsValid)
             {
-                // Nếu xác thực thất bại, trả về view với model hiện tại
+                // Return the view with the current model to display validation errors
                 return View(model);
             }
 
-            // Kiểm tra email đã tồn tại
+            // Check if email already exists
             if (_context.HocViens.Any(h => h.Email == model.Email))
             {
                 ModelState.AddModelError("Email", "Email đã được sử dụng.");
                 return View(model);
             }
 
-            // Kiểm tra số điện thoại đã tồn tại
+            // Check if phone number already exists
             if (_context.HocViens.Any(h => h.SoDienThoai == model.SoDienThoai))
             {
                 ModelState.AddModelError("SoDienThoai", "Số điện thoại đã được sử dụng.");
                 return View(model);
             }
 
-            // Kiểm tra toàn bộ thông tin (nếu cần)
+            // Check if all information already exists
             if (_context.HocViens.Any(h =>
                 h.HoTen == model.HoTen &&
                 h.NgaySinh == model.NgaySinh &&
@@ -57,18 +57,16 @@ namespace CourseManagement.Areas.Users.Controllers
                 return View(model);
             }
 
-            // Tạo mã học viên mới
-            string newMaHocVien = GenerateNewMaHocVien();
-
             // Tạo thực thể HocVien mới
             var hocVien = new HocVien
             {
-                MaHocVien = newMaHocVien,
+                MaHocVien = GenerateNewMaHocVien(),
                 HoTen = model.HoTen,
                 NgaySinh = model.NgaySinh,
                 SoDienThoai = model.SoDienThoai,
                 Email = model.Email,
-                MatKhau = model.MatKhau // Đảm bảo mã hóa mật khẩu trong ứng dụng thực tế
+                MatKhau = model.MatKhau,
+                Role = 1 // Default role as User
             };
 
             // Thêm HocVien mới vào cơ sở dữ liệu
@@ -79,7 +77,6 @@ namespace CourseManagement.Areas.Users.Controllers
             return RedirectToAction("Login", "Login");
         }
 
-
         // Method to generate a new MaHocVien
         private string GenerateNewMaHocVien()
         {
@@ -89,11 +86,19 @@ namespace CourseManagement.Areas.Users.Controllers
                 .Select(h => h.MaHocVien)
                 .FirstOrDefault();
 
-            // Convert the current largest MaHocVien to an integer
-            int currentMax = string.IsNullOrEmpty(maxMaHocVien) ? 0 : int.Parse(maxMaHocVien);
+            // Extract the numeric part of MaHocVien
+            int currentMax = 0;
+            if (!string.IsNullOrEmpty(maxMaHocVien) && maxMaHocVien.Length > 2)
+            {
+                var numericPart = maxMaHocVien.Substring(2); // Skip the prefix (e.g., "HV")
+                if (int.TryParse(numericPart, out var parsedNumber))
+                {
+                    currentMax = parsedNumber;
+                }
+            }
 
-            // Increment by 1 and format as a 9-digit string
-            return (currentMax + 1).ToString("D9");
+            // Increment by 1 and format as "HV" + 3-digit number
+            return $"HV{(currentMax + 1):D3}";
         }
     }
 }

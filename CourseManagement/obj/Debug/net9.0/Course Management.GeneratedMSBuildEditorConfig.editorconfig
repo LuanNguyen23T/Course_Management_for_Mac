@@ -60,6 +60,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvVXNlcnMvVmlld3MvUmVnaXN0ZXIvUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/Areas/Users/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvVXNlcnMvVmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/CourseManagement/Views/Home/Course.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db3Vyc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

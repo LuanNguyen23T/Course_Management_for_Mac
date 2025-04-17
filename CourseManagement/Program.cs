@@ -1,5 +1,7 @@
 using CourseManagement.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -9,6 +11,12 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<CourseManagementDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Users/Login/Login";
+        options.LogoutPath = "/Users/Login/Logout";
+    });
 
 var app = builder.Build();
 
@@ -23,6 +31,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapStaticAssets();
@@ -31,8 +40,11 @@ app.MapControllerRoute(
     name: "areas",
     pattern: "{area:exists}/{controller=Home}/{action=Main}/{id?}");
 
+// app.MapControllerRoute(
+//     name: "default",
+//     pattern: "{area=Admin}/{controller=Main}/{action=Main}/{id?}");
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{area=Admin}/{controller=Main}/{action=Main}/{id?}");
-
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 app.Run();

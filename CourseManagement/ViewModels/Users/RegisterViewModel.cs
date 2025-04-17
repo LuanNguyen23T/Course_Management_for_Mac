@@ -32,7 +32,5 @@ namespace CourseManagement.ViewModels.Users
         [Compare("MatKhau", ErrorMessage = "Mật khẩu và xác nhận mật khẩu không khớp")]
         [DataType(DataType.Password)]
         public string XacNhanMatKhau { get; set; }
-
-
     }
 }

@@ -63,13 +63,16 @@
     <div class="register-container">
         <h2>Đăng Ký</h2>
         <form method="post" asp-action="Register">
+            <!-- Display model-level validation errors -->
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
             <div class="mb-3">
                 <label for="HoTen" class="form-label">Họ Tên</label>
                 <div class="input-group">
                     <span class="input-group-text"><i class="bi bi-person"></i></span>
                     <input type="text" id="HoTen" name="HoTen" class="form-control" placeholder="Họ Tên" value="@Model.HoTen" />
                 </div>
-                <span asp-validation-for="HoTen" class="text-danger"></span>
+                @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })
             </div>
 
             <div class="mb-3">
@@ -78,9 +81,8 @@
                     <span class="input-group-text"><i class="bi bi-calendar"></i></span>
                     <input type="date" id="NgaySinh" name="NgaySinh" class="form-control" value="@Model.NgaySinh.ToString("yyyy-MM-dd")" />
                 </div>
-                <span asp-validation-for="NgaySinh" class="text-danger"></span>
+                @Html.ValidationMessageFor(model => model.NgaySinh, "", new { @class = "text-danger" })
             </div>
-
 
             <div class="mb-3">
                 <label for="SoDienThoai" class="form-label">Số Điện Thoại</label>
@@ -88,7 +90,7 @@
                     <span class="input-group-text"><i class="bi bi-telephone"></i></span>
                     <input type="text" id="SoDienThoai" name="SoDienThoai" class="form-control" placeholder="Số Điện Thoại" value="@Model.SoDienThoai" />
                 </div>
-                <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+                @Html.ValidationMessageFor(model => model.SoDienThoai, "", new { @class = "text-danger" })
             </div>
 
             <div class="mb-3">
@@ -97,7 +99,7 @@
                     <span class="input-group-text"><i class="bi bi-envelope"></i></span>
                     <input type="email" id="Email" name="Email" class="form-control" placeholder="Email" value="@Model.Email" />
                 </div>
-                <span asp-validation-for="Email" class="text-danger"></span>
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
             </div>
 
             <div class="mb-3">
@@ -106,7 +108,7 @@
                     <span class="input-group-text"><i class="bi bi-lock"></i></span>
                     <input type="password" id="MatKhau" name="MatKhau" class="form-control" placeholder="Mật Khẩu" />
                 </div>
-                <span asp-validation-for="MatKhau" class="text-danger"></span>
+                @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
             </div>
 
             <div class="mb-3">
@@ -115,7 +117,7 @@
                     <span class="input-group-text"><i class="bi bi-lock"></i></span>
                     <input type="password" id="XacNhanMatKhau" name="XacNhanMatKhau" class="form-control" placeholder="Xác Nhận Mật Khẩu" />
                 </div>
-                <span asp-validation-for="XacNhanMatKhau" class="text-danger"></span>
+                @Html.ValidationMessageFor(model => model.XacNhanMatKhau, "", new { @class = "text-danger" })
             </div>
 
             <button type="submit" class="btn btn-primary">Đăng Ký</button>
