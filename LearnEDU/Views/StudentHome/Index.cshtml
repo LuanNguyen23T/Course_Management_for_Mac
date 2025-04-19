@@ -1,0 +1,125 @@
+﻿@{
+    ViewData["Title"] = "Student Home";
+
+    var topCourses = ViewBag.TopCourses as List<LearnEDU.Models.Course>;
+    var cheapestCourses = ViewBag.CheapestCourses as List<LearnEDU.Models.Course>;
+    var newestCourses = ViewBag.NewestCourses as List<LearnEDU.Models.Course>;
+    var coursesByCategory = ViewBag.CoursesByCategory as Dictionary<string, List<LearnEDU.Models.Course>>;
+}
+
+<!-- 🖼 Banner đầu trang -->
+@section FullWidth {
+    <div style="width: 100%;">
+        <img src="~/images/Banner-1.png" class="img-fluid w-100" style="max-height:500px; object-fit: cover;" alt="Banner" />
+    </div>
+}
+
+
+
+<!-- 🔥 Top Course -->
+<h4 class="mb-3">🔥 Top Course</h4>
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    @foreach (var course in topCourses)
+    {
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                @if (!string.IsNullOrEmpty(course.ImageUrl))
+                {
+                    <img src="@course.ImageUrl" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Course image" />
+                }
+                else
+                {
+                    <img src="~/images/no-image.png" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Default course image" />
+                }
+                <div class="card-body">
+                    <h5 class="card-title">@course.Name</h5>
+                    <p class="card-text">@course.InstructorName - @course.Category</p>
+                    <p class="text-muted">👥 @course.CurrentSize / @course.Capacity</p>
+                    <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-primary btn-sm">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<!-- 💸 Cheapest Course -->
+<h4 class="mb-3">💸 Cheapest Course</h4>
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    @foreach (var course in cheapestCourses)
+    {
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                @if (!string.IsNullOrEmpty(course.ImageUrl))
+                {
+                    <img src="@course.ImageUrl" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Course image" />
+                }
+                else
+                {
+                    <img src="~/images/no-image.png" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Default course image" />
+                }
+                <div class="card-body">
+                    <h5 class="card-title">@course.Name</h5>
+                    <p class="card-text">💰 Giá: @course.Price nghìn VNĐ</p>
+                    <p class="text-muted">📅 Bắt đầu: @course.StartDate.ToString("dd/MM/yyyy")</p>
+                    <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-success btn-sm">Xem ngay</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<!-- 🆕 Newest Course -->
+<h4 class="mb-3">🆕 Newest Course</h4>
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    @foreach (var course in newestCourses)
+    {
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                @if (!string.IsNullOrEmpty(course.ImageUrl))
+                {
+                    <img src="@course.ImageUrl" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Course image" />
+                }
+                else
+                {
+                    <img src="~/images/no-image.png" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Default course image" />
+                }
+                <div class="card-body">
+                    <h5 class="card-title">@course.Name</h5>
+                    <p class="card-text">📅 Ngày bắt đầu: @course.StartDate.ToString("dd/MM/yyyy")</p>
+                    <p class="text-muted">👨‍🏫 Giảng viên: @course.InstructorName</p>
+                    <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-info btn-sm">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<!-- 📚 Course theo từng Category -->
+@foreach (var category in coursesByCategory)
+{
+    <h4 class="mb-3">📚 @category.Key</h4>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+        @foreach (var course in category.Value)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    @if (!string.IsNullOrEmpty(course.ImageUrl))
+                    {
+                        <img src="@course.ImageUrl" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Course image" />
+                    }
+                    else
+                    {
+                        <img src="~/images/no-image.png" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Default course image" />
+                    }
+                    <div class="card-body">
+                        <h5 class="card-title">@course.Name</h5>
+                        <p class="card-text">👨‍🏫 @course.InstructorName</p>
+                        <p class="text-muted">👥 @course.CurrentSize / @course.Capacity</p>
+                        <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-outline-dark btn-sm">Xem khóa học</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+

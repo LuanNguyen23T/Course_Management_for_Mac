@@ -1,0 +1,51 @@
+﻿@model LearnEDU.Models.Student
+@{
+    @if (ViewBag.RoleView == "Student") ViewData["Title"] = "Student Details";
+    else ViewData["Title"] = "Admin Details";
+}
+
+@if(ViewBag.RoleView=="Student"){ 
+    <h2 class="mb-4">Student Details</h2>
+}
+else{
+    <h2 class="mb-4">Admin Details</h2>
+}
+
+<div class="card" style="max-width: 600px;">
+    <div class="card-body">
+        @if (!string.IsNullOrEmpty(Model.Image))
+        {
+            <div class="text-center mb-3">
+                <img src="@Model.Image" alt="Student Image" width="150" height="150" class="rounded" />
+            </div>
+        }
+
+        <p><strong>Username:</strong> @Model.Username</p>
+        @if (ViewBag.Role == "Admin")
+        {
+            <p><strong>Password:</strong> @Model.Password</p>
+        }
+        <p><strong>Full Name:</strong> @Model.FirstName @Model.LastName</p>
+        <p><strong>Email:</strong> @Model.Email</p>
+        <p><strong>Phone:</strong> @Model.Phone</p>
+        <p><strong>Address:</strong> @Model.Address</p>
+        <p><strong>Date of Birth:</strong> @Model.DateOfBirth.ToString("dd/MM/yyyy")</p>
+        <p><strong>Gender:</strong> @Model.Gender</p>
+        @if (ViewBag.Role == "Student")
+        {
+            <div class="mb-3">
+                <p><strong>Education:</strong> @Model.Education</p>
+            </div>
+        }
+        @if (ViewBag.Role == "Admin")
+        {
+            <div class="mb-3">
+                <p><strong>CurrentBalance:</strong> @Model.CurrentBalance</p>
+            </div>
+        }
+        @if (ViewBag.Role == "Admin"){
+            <p><strong>Date Register:</strong> @Model.DateRegister.ToString("dd/MM/yyyy")</p>
+        }
+    </div>
+</div>
+

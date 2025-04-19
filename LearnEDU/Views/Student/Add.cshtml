@@ -1,0 +1,82 @@
+﻿@model LearnEDU.Models.Student
+@{
+    ViewData["Title"] = (ViewBag.IsAddAdmin == true) ? "Add Admin" : "Add Student";
+}
+
+
+<h3>@(ViewBag.IsAddAdmin == true ? "Thêm Admin" : "Thêm học sinh")</h3>
+
+
+<form asp-action="@(ViewBag.IsAddAdmin == true ? "AddAdmin" : "Add")" method="post" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col-md-6">
+            <label asp-for="Username"></label>
+            <input asp-for="Username" class="form-control" />
+            <span asp-validation-for="Username" class="text-danger"></span> 
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Password"></label>
+            <input asp-for="Password" type="password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName" class="form-control" />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName" class="form-control" />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" type="email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Phone"></label>
+            <input asp-for="Phone" class="form-control" />
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Address"></label>
+            <input asp-for="Address" class="form-control" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="DateOfBirth"></label>
+            <input asp-for="DateOfBirth" type="date" class="form-control" />
+            <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Gender"></label>
+            <select asp-for="Gender" class="form-control">
+                <option value="">-- Select Gender --</option>
+                <option>Nam</option>
+                <option>Nữ</option>
+                <option>Khác</option>
+            </select>
+            <span asp-validation-for="Gender" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Education"></label>
+            <input asp-for="Education" class="form-control" />
+            <span asp-validation-for="Education" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Image"></label>
+            <label for="ImageFile">Upload Image</label>
+            <input type="file" name="ImageFile" class="form-control" />
+        </div>
+    </div>
+    <!-- GUI ROLE VE CHO HTTP POST ADD -->
+    <input type="hidden" name="Role" value="@(ViewBag.IsAddAdmin == true ? "Admin" : "Student")" />
+
+    <br />
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

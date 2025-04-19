@@ -1,0 +1,29 @@
+body {
+    background: #f0f2f5;
+}
+
+.login-card, .register-box {
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.btn-primary {
+    background: #000; /* Màu nền nút đen */
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #333; /* Màu nền nút khi hover */
+}
+
+h3.text-primary, h4.text-primary {
+    color: #000000 !important; /* Màu đen cho tiêu đề */
+}
+
+a {
+    color: #000000; /* Màu xanh cho liên kết */
+}
+
+
+

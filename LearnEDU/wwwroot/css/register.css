@@ -1,0 +1,65 @@
+body {
+    background: #f0f2f5; /* Nền xám nhạt */
+}
+
+.register-box {
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Bóng mờ */
+    background: #ffffff; /* Nền trắng */
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+h4.text-primary {
+    color: #000000 !important; /* Màu đen cho tiêu đề */
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd; /* Viền xám nhạt */
+    padding-bottom: 0.5rem;
+    color: #000000; /* Màu đen cho tiêu đề phần */
+}
+
+.form-label {
+    font-weight: bold;
+    color: #000000; /* Màu đen cho nhãn */
+}
+
+.form-control {
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    background: #f9f9f9; /* Nền input xám nhạt */
+    color: #000000; /* Màu chữ đen */
+    border: 1px solid #ccc; /* Viền xám nhạt */
+}
+
+.form-control:focus {
+    border-color: #666; /* Viền xám đậm khi focus */
+    box-shadow: none; /* Không có bóng */
+    background: #ffffff; /* Nền trắng khi focus */
+    color: #000000; /* Màu chữ đen */
+}
+
+a {
+    color: #000000; /* Màu đen cho liên kết */
+    text-decoration: none;
+}
+
+.btn-success {
+    background: #000000; /* Màu nền nút đen */
+    border: none;
+    color: #ffffff; /* Màu chữ trắng */
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 50px; /* Bo tròn nút */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+.btn-success:hover {
+    background: #333333; /* Màu đen nhạt hơn khi hover */
+    color: #ffffff; /* Giữ màu chữ trắng */
+    text-decoration: none; /* Loại bỏ gạch chân nếu là liên kết */
+}

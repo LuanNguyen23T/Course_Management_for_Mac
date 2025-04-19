@@ -1,0 +1,401 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/obj/Debug/net9.0/scopedcss/projectbundle/LearnEDU.bundle.scp.css",
+      "PackagePath": "staticwebassets/LearnEDU.k3010xp5n5.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/css/login.css",
+      "PackagePath": "staticwebassets/css/login.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/css/register.css",
+      "PackagePath": "staticwebassets/css/register.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/1f512d27-2f6f-467a-9655-15bf75ec6810.jpg",
+      "PackagePath": "staticwebassets/images/1f512d27-2f6f-467a-9655-15bf75ec6810.jpg"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/2abdaff2-0ca3-4bce-b101-6cf3a898e180.jpg",
+      "PackagePath": "staticwebassets/images/2abdaff2-0ca3-4bce-b101-6cf3a898e180.jpg"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/36705d82-403b-434f-86a5-8c0784cfe8ed.png",
+      "PackagePath": "staticwebassets/images/36705d82-403b-434f-86a5-8c0784cfe8ed.png"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/398e70bc-ffd7-4256-a486-edf446695c31.jpg",
+      "PackagePath": "staticwebassets/images/398e70bc-ffd7-4256-a486-edf446695c31.jpg"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/39a25086-2fdc-450c-91ec-905d704fd5a1.jpg",
+      "PackagePath": "staticwebassets/images/39a25086-2fdc-450c-91ec-905d704fd5a1.jpg"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/3aa5292b-8142-4363-af35-1529f3ac8124.png",
+      "PackagePath": "staticwebassets/images/3aa5292b-8142-4363-af35-1529f3ac8124.png"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/44296f05-3c4b-4a87-947a-7d98c34fbad0.png",
+      "PackagePath": "staticwebassets/images/44296f05-3c4b-4a87-947a-7d98c34fbad0.png"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/4a01e644-c0e2-4c34-b422-9ecc0ba975c4.png",
+      "PackagePath": "staticwebassets/images/4a01e644-c0e2-4c34-b422-9ecc0ba975c4.png"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/534135d6-ddc4-4d69-9baa-84c4484b22c4.jpg",
+      "PackagePath": "staticwebassets/images/534135d6-ddc4-4d69-9baa-84c4484b22c4.jpg"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/55881879-7834-4474-999c-96d19269d78c.png",
+      "PackagePath": "staticwebassets/images/55881879-7834-4474-999c-96d19269d78c.png"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/5719c5bd-1b45-42fc-984c-dd0b1871b0cb.jpg",
+      "PackagePath": "staticwebassets/images/5719c5bd-1b45-42fc-984c-dd0b1871b0cb.jpg"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/57459d5b-5e55-4218-af37-d66896ba9a6d.jpg",
+      "PackagePath": "staticwebassets/images/57459d5b-5e55-4218-af37-d66896ba9a6d.jpg"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/830c541a-b3fd-402a-8e60-20ba73fb1613.jpg",
+      "PackagePath": "staticwebassets/images/830c541a-b3fd-402a-8e60-20ba73fb1613.jpg"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/8df1c1a1-1f14-4f63-a0eb-c79aa5473a5c.png",
+      "PackagePath": "staticwebassets/images/8df1c1a1-1f14-4f63-a0eb-c79aa5473a5c.png"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/973be9a6-d928-4528-8562-26a8ef24162d.png",
+      "PackagePath": "staticwebassets/images/973be9a6-d928-4528-8562-26a8ef24162d.png"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/9db00ae9-06fc-459b-8b14-43050afc4e42.jpg",
+      "PackagePath": "staticwebassets/images/9db00ae9-06fc-459b-8b14-43050afc4e42.jpg"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/Banner-1.png",
+      "PackagePath": "staticwebassets/images/Banner-1.png"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/a6b8355a-f398-42d1-bdae-becb5b764cf3.jpg",
+      "PackagePath": "staticwebassets/images/a6b8355a-f398-42d1-bdae-becb5b764cf3.jpg"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/a7f77521-053f-4f89-a3fa-0af7feabbbac.jpg",
+      "PackagePath": "staticwebassets/images/a7f77521-053f-4f89-a3fa-0af7feabbbac.jpg"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/b188720b-607c-4761-af27-ba1d9b46e661.jpg",
+      "PackagePath": "staticwebassets/images/b188720b-607c-4761-af27-ba1d9b46e661.jpg"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/bcf29a93-96af-4f19-8c08-ac55e38ce0ef.png",
+      "PackagePath": "staticwebassets/images/bcf29a93-96af-4f19-8c08-ac55e38ce0ef.png"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/cf15a336-5dcf-4227-b67a-168763cf23f0.jpg",
+      "PackagePath": "staticwebassets/images/cf15a336-5dcf-4227-b67a-168763cf23f0.jpg"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/d9d1c028-8f2b-4a11-b27a-00e6fcf161c6.png",
+      "PackagePath": "staticwebassets/images/d9d1c028-8f2b-4a11-b27a-00e6fcf161c6.png"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/dcbea9e8-3f8c-495d-828e-5f8a06adc18c.png",
+      "PackagePath": "staticwebassets/images/dcbea9e8-3f8c-495d-828e-5f8a06adc18c.png"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/e037418f-1b96-4fe0-b0b0-8b4bdfac3dcf.jpg",
+      "PackagePath": "staticwebassets/images/e037418f-1b96-4fe0-b0b0-8b4bdfac3dcf.jpg"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/e26a4ed2-76e0-4ca9-b816-324c32e8997d.png",
+      "PackagePath": "staticwebassets/images/e26a4ed2-76e0-4ca9-b816-324c32e8997d.png"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/e55e0c85-4da4-4681-a4a0-7edae6d6e9b6.xlsx",
+      "PackagePath": "staticwebassets/images/e55e0c85-4da4-4681-a4a0-7edae6d6e9b6.xlsx"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/images/f79e3ad4-eb47-4309-b37a-e680b4915ba6.jpg",
+      "PackagePath": "staticwebassets/images/f79e3ad4-eb47-4309-b37a-e680b4915ba6.jpg"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/jquery/dist/jquery.slim.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/jquery/dist/jquery.slim.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.js"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/KhoaEdu/LearnEDU/wwwroot/lib/jquery/dist/jquery.slim.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.LearnEDU.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.LearnEDU.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.LearnEDU.props",
+      "PackagePath": "build\\LearnEDU.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.LearnEDU.props",
+      "PackagePath": "buildMultiTargeting\\LearnEDU.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.LearnEDU.props",
+      "PackagePath": "buildTransitive\\LearnEDU.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

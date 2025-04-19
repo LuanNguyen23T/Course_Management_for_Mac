@@ -1,0 +1,88 @@
+﻿@model LearnEDU.Models.Course
+
+@{
+    ViewData["Title"] = "Chi tiết khóa học";
+}
+
+<h2 class="mb-4">Chi tiết khóa học</h2>
+
+<div class="card shadow border-0">
+    <div class="row g-0">
+        <div class="col-md-5">
+            @if (!string.IsNullOrEmpty(Model.ImageUrl))
+            {
+                <img src="@Model.ImageUrl" class="img-fluid rounded-start" style="max-height: 300px; object-fit: cover;" />
+            }
+            else
+            {
+                <div class="text-center p-5 text-muted">Không có ảnh</div>
+            }
+        </div>
+        <div class="col-md-7">
+            <div class="card-body">
+                <h4 class="card-title">@Model.Name</h4>
+                <p><strong>Mô tả:</strong></p>
+                <p style="white-space: pre-line;">@Model.Description</p>
+                <p><strong>Nội dung chi tiết:</strong></p>
+                <p style="white-space: pre-line;">@Model.Content</p>
+                <p><strong>Giảng viên:</strong> @Model.InstructorName</p>
+                <p><strong>Trình độ:</strong> @Model.Level</p>
+                <p><strong>Chủ đề:</strong> @Model.Category</p>
+                <p><strong>Ngày bắt đầu:</strong> @Model.StartDate.ToString("dd/MM/yyyy")</p>
+                <p><strong>Ngày kết thúc:</strong> @Model.EndDate.ToString("dd/MM/yyyy")</p>
+                <p><strong>Thời lượng:</strong> @Model.Duration ngày</p>
+                <p><strong>Sĩ số:</strong> @Model.CurrentSize / @Model.Capacity</p>
+                <p><strong>Giá:</strong> @Model.Price nghìn VNĐ</p>
+                @if (ViewBag.Role == "Admin"){
+                    <p><strong>Ngày tạo:</strong> @Model.DateCreated.ToString("dd/MM/yyyy")</p>
+                }
+            </div>
+        </div>
+
+        @if (ViewBag.Role == "Student")
+        {
+            <div class="mt-4 d-flex gap-2">
+                @if (ViewBag.IsEnrolled)
+                {
+                    <form method="post" asp-action="Unenroll" asp-route-id="@Model.Id" class="d-inline">
+                        <button type="submit" class="btn btn-danger">❌ Unenroll</button>
+                    </form>
+                }
+                else
+                {
+                    <form method="post" asp-action="Enroll" asp-route-id="@Model.Id" class="d-inline">
+                        <button type="submit" class="btn btn-success">✅ Enroll</button>
+                    </form>
+                }
+
+                <a href="@Url.Action("EnrolledStudents", "Course", new { id = Model.Id })"
+                   class="btn btn-outline-primary d-inline">
+                    👥 View Enrolled Students
+                </a>
+            </div>
+
+            @if (TempData["EnrollError"] != null)
+            {
+                <div class="alert alert-danger mt-3">@TempData["EnrollError"]</div>
+            }
+
+            @if (TempData["EnrollSuccess"] != null)
+            {
+                <div class="alert alert-success mt-3">@TempData["EnrollSuccess"]</div>
+            }
+        }
+        else
+        {
+            <div class="mt-4">
+                <a href="@Url.Action("EnrolledStudents", "Course", new { id = Model.Id })"
+                   class="btn btn-outline-primary">
+                    👥 View Enrolled Students
+                </a>
+            </div>
+        }
+
+
+    </div>
+
+</div>
+

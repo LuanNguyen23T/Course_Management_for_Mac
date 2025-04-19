@@ -1,0 +1,36 @@
+﻿@model List<LearnEDU.Models.Enrollment>
+@{
+    ViewData["Title"] = "Danh sách học sinh đã đăng ký";
+}
+
+<h4>👥 Học sinh đã đăng ký khóa học: @ViewBag.CourseName</h4>
+
+<table class="table table-bordered mt-3">
+    <thead class="table-light">
+        <tr>
+            <th>Username</th>
+            <th>Họ tên</th>
+            <th>Email</th>
+            <th>Giới tính</th>
+            <th>Thời gian ghi danh</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model)
+        {
+            <tr>
+                <td>@e.Student.Username</td>
+                <td>@e.Student.FirstName @e.Student.LastName</td>
+                <td>@e.Student.Email</td>
+                <td>@e.Student.Gender</td>
+                <td>@e.EnrollDate.ToString("HH:mm:ss dd/MM/yyyy")</td>
+                <td>
+                    <a class="btn btn-sm btn-info" href="@Url.Action("Details", "Student", new { id = e.Student.Id })">
+                        Details
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

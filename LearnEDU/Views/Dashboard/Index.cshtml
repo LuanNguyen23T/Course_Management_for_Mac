@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Trang quản trị";
+}
+
+<h2 class="mb-4">Thống kê</h2>
+
+<!-- Bộ lọc khoảng thời gian -->
+<form method="get" class="row g-3 mb-4">
+    <div class="col-md-4">
+        <label for="fromDate">Từ ngày:</label>
+        <input type="date" id="fromDate" name="fromDate" class="form-control" value="@ViewBag.FromDate" />
+    </div>
+    <div class="col-md-4">
+        <label for="toDate">Đến ngày:</label>
+        <input type="date" id="toDate" name="toDate" class="form-control" value="@ViewBag.ToDate" />
+    </div>
+    <div class="col-md-4 d-flex align-items-end">
+        <button type="submit" class="btn btn-primary w-100">📅 Áp dụng</button>
+    </div>
+</form>
+
+<!-- Tổng quan -->
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card bg-primary text-white shadow">
+            <div class="card-body">
+                <h5 class="card-title">Tổng số học sinh</h5>
+                <p class="display-6">@ViewBag.TotalStudents</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card bg-success text-white shadow">
+            <div class="card-body">
+                <h5 class="card-title">Tổng số khóa học</h5>
+                <p class="display-6">@ViewBag.TotalCourses</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 mb-4">
+    <div class="card bg-warning text-white shadow">
+        <div class="card-body">
+            <h5 class="card-title">💰 Tổng doanh thu trong khoảng thời gian</h5>
+            <p class="display-6">@ViewBag.TotalRevenue</p>
+        </div>
+    </div>
+</div>
+<!-- Doanh thu theo từng khóa học -->
+<div class="mb-4">
+    <h5> Doanh thu từng khóa học trong khoảng thời gian đã chọn</h5>
+    <ul class="list-group">
+        @foreach (var item in ViewBag.RevenueByCourse)
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                @item.CourseName
+                <span class="badge bg-dark rounded-pill">@item.Revenue nghìn VNĐ</span>
+            </li>
+        }
+    </ul>
+</div>
+

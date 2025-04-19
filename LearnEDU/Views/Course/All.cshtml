@@ -1,0 +1,154 @@
+﻿@model X.PagedList.IPagedList<LearnEDU.Models.Course>
+@using X.PagedList.Mvc.Core
+
+@{
+    ViewData["Title"] = "All Courses";
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+<h2 class="mb-4">Danh sách khóa học</h2>
+
+<!-- 🔍 Form Tìm kiếm nâng cao -->
+<form method="get" class="row g-3 mb-4">
+    <div class="col-md-3">
+        <input type="text" name="name" value="@ViewBag.SearchName" class="form-control" placeholder="Tên khóa học" />
+    </div>
+    <div class="col-md-2">
+        <input type="date" name="startDate" value="@ViewBag.SearchDate" class="form-control" />
+    </div>
+    <div class="col-md-2">
+        <select name="instructor" class="form-select">
+            <option value="">-- Giảng viên --</option>
+            @foreach (var instructor in ViewBag.Instructors as List<string>)
+            {
+                <option value="@instructor" selected="@(instructor == ViewBag.SelectedInstructor)">
+                    @instructor
+                </option>
+            }
+        </select>
+    </div>
+    <div class="col-md-2">
+        <select name="level" class="form-select">
+            <option value="">-- Trình độ --</option>
+            @foreach (var level in ViewBag.Levels as List<string>)
+            {
+                <option value="@level" selected="@(level == ViewBag.SelectedLevel)">
+                    @level
+                </option>
+            }
+        </select>
+    </div>
+    <div class="col-md-2">
+        <select name="category" class="form-select">
+            <option value="">-- Chủ đề --</option>
+            @foreach (var category in ViewBag.Categories as List<string>)
+            {
+                <option value="@category" selected="@(category == ViewBag.SelectedCategory)">
+                    @category
+                </option>
+            }
+        </select>
+    </div>
+    <div class="col-md-2">
+        <select name="priceRange" class="form-select">
+            <option value="">-- Giá --</option>
+            <option value="lt500" selected="@(ViewBag.SelectedPriceRange == "lt500")">Dưới 500</option>
+            <option value="500to1000" selected="@(ViewBag.SelectedPriceRange == "500to1000")">500 - 1000</option>
+            <option value="gt1000" selected="@(ViewBag.SelectedPriceRange == "gt1000")">Trên 1000</option>
+        </select>
+    </div>
+    <div class="col-md-2 d-flex align-items-center">
+        <input type="checkbox" name="onlyUpcoming" value="true" class="form-check-input me-2"
+        @(Context.Request.Query["onlyUpcoming"] == "true" ? "checked" : "") />
+        <label class="form-check-label">Chỉ khóa học chưa bắt đầu</label>
+    </div>
+    <div class="col-md-2">
+        <button type="submit" class="btn btn-primary w-100">🔍 Tìm kiếm</button>
+    </div>
+    <div class="col-auto">
+        <a href="@Url.Action("All", "Course")" class="btn btn-secondary">Đặt lại</a>
+    </div>
+</form>
+
+<!-- 📦 Danh sách Course dạng thẻ -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    @foreach (var course in Model)
+    {
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                @if (!string.IsNullOrEmpty(course.ImageUrl))
+                {
+                    <img src="@course.ImageUrl" class="card-img-top" style="height: 180px; object-fit: cover;" />
+                }
+
+                <div class="card-body">
+                    <h5 class="card-title">@course.Name</h5>
+                    <p class="mb-1"><strong>Level:</strong> @course.Level</p>
+                    <p class="mb-1"><strong>Start:</strong> @course.StartDate.ToString("dd/MM/yyyy")</p>
+                    <p class="mb-1"><strong>Instructor:</strong> @course.InstructorName</p>
+                    <p class="mb-1"><strong>Category:</strong> @course.Category</p>
+                    <p class="mb-1"><strong>Price (nghìn VNĐ):</strong> @course.Price</p>
+                    <p class="mb-1"><strong>Current size:</strong> @course.CurrentSize / @course.Capacity</p>
+                </div>
+
+                <div class="card-footer bg-transparent text-center">
+                    @if (ViewBag.Role == "Admin")
+                    {
+                        <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-info btn-sm me-1">
+                            Details
+                        </a>
+                        <a href="@Url.Action("Edit", "Course", new { id = course.Id })" class="btn btn-warning btn-sm me-1">
+                            Edit
+                        </a>
+                        <a href="@Url.Action("Delete", "Course", new { id = course.Id })"
+                           onclick="return confirm('Bạn có chắc muốn xóa khóa học này không?');"
+                           class="btn btn-danger btn-sm">
+                            Delete
+                        </a>
+                        ///Url.Action()
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-info btn-sm">
+                            Chi tiết
+                        </a>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<!-- 📄 Phân trang -->
+<div class="mt-4 d-flex justify-content-center">
+    @Html.PagedListPager(Model, page => Url.Action("All", new
+        {
+            page,
+            name = ViewBag.SearchName,
+            startDate = ViewBag.SearchDate,
+            instructor = ViewBag.SelectedInstructor,
+            level = ViewBag.SelectedLevel,
+            category = ViewBag.SelectedCategory,
+            priceRange = ViewBag.SelectedPriceRange,
+            onlyUpcoming = ViewBag.OnlyUpcoming
+        }),
+            new PagedListRenderOptions
+    {
+        LiElementClasses = new[] { "page-item" },
+        PageClasses = new[] { "page-link" },
+        UlElementClasses = new[] { "pagination" },
+        DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+        DisplayLinkToLastPage = PagedListDisplayMode.Always,
+        DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+        DisplayLinkToNextPage = PagedListDisplayMode.Always,
+        DisplayLinkToIndividualPages = true,
+        MaximumPageNumbersToDisplay = 5
+    })
+</div>
