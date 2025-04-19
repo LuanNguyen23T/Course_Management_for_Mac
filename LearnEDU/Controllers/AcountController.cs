@@ -25,7 +25,7 @@ namespace LearnEDU.Controllers
             ModelState.Remove("Role");
             student.Role = "Student";
             student.DateRegister = DateTime.Now;
-            student.CurrentBalance = 100;
+            student.CurrentBalance = 0;
             if (_context.Students.Any(s => s.Username == student.Username))
             {
                 ModelState.AddModelError("Username", "Tên đăng nhập đã tồn tại.");
@@ -41,7 +41,7 @@ namespace LearnEDU.Controllers
             if (ModelState.IsValid)
             {
                 student.Role = "Student";
-                student.CurrentBalance = 100;
+                student.CurrentBalance = 0;
                 student.DateRegister = DateTime.Now;
 
                 _context.Students.Add(student);
