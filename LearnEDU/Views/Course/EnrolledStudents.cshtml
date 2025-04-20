@@ -13,7 +13,6 @@
             <th>Email</th>
             <th>Giới tính</th>
             <th>Thời gian ghi danh</th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -25,15 +24,18 @@
                 <td>@e.Student.Email</td>
                 <td>@e.Student.Gender</td>
                 <td>@e.EnrollDate.ToString("HH:mm:ss dd/MM/yyyy")</td>
-                <td>
-                    <a class="btn btn-sm btn-dark" href="@Url.Action("Details", "Student", new { id = e.Student.Id })">
-                        Details
-                    </a>
-                    <a class="btn btn-danger btn-sm" href="@Url.Action("Delete", "Student", new { id = e.Student.Id })"
-                       onclick="return confirm('Bạn có chắc muốn xóa học sinh này không?');">
-                        Xoá
-                    </a>
-                </td>
+                @if (User.IsInRole("Admin"))
+                {
+                    <td>
+                        <a class="btn btn-sm btn-dark" href="@Url.Action("Details", "Student", new { id = e.Student.Id })">
+                            Details
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="@Url.Action("Delete", "Student", new { id = e.Student.Id })"
+                           onclick="return confirm('Bạn có chắc muốn xóa học sinh này không?');">
+                            Xoá
+                        </a>
+                    </td>
+                }
             </tr>
         }
     </tbody>

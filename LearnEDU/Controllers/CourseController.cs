@@ -225,8 +225,9 @@ namespace LearnEDU.Controllers
             var role = HttpContext.Session.GetString("Role");
             if (role != "Student")
             {
-                return RedirectToAction("AccessDenied", "Account"); // hoặc về trang Home
+                return RedirectToAction("AccessDenied", "Account");
             }
+
             var studentId = HttpContext.Session.GetInt32("UserId");
             if (studentId == null) return RedirectToAction("Login", "Account");
 
@@ -259,13 +260,22 @@ namespace LearnEDU.Controllers
                 return RedirectToAction("Details", new { id });
             }
 
-            // Ghi danh
-            student.CurrentBalance -= course.Price;
-            course.CurrentSize++;
-            _context.Enrollments.Add(new Enrollment { StudentId = student.Id, CourseId = id , EnrollDate = DateTime.Now });
-            _context.SaveChanges();
+            try
+            {
+                // Ghi danh
+                student.CurrentBalance -= course.Price;
+                course.CurrentSize++;
+                _context.Enrollments.Add(new Enrollment { StudentId = student.Id, CourseId = id, EnrollDate = DateTime.Now });
+                _context.SaveChanges();
 
-            TempData["EnrollSuccess"] = "Đã ghi danh thành công.";
+                TempData["EnrollSuccess"] = "Đã ghi danh thành công.";
+            }
+            catch (Exception ex)
+            {
+                TempData["EnrollError"] = "Đã xảy ra lỗi khi ghi danh. Vui lòng thử lại.";
+                Console.WriteLine($"❌ Error during enrollment: {ex.Message}");
+            }
+
             return RedirectToAction("Details", new { id });
         }
 

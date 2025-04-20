@@ -48,7 +48,7 @@
 
         <div class="mt-4 d-flex justify-content-center">
             <a href="@Url.Action("EnrolledStudents", "Course", new { id = Model.Id })"
-            class="btn btn-outline-primary p-3">
+            class="btn btn-outline-dark p-3">
                 Xem học sinh đã đăng ký
             </a>
         </div>  
@@ -56,7 +56,7 @@
         @if (ViewBag.Role == "Student")
         {
             <div class="mt-4 d-flex gap-2">
-                @if (ViewBag.IsEnrolled)
+                @if (ViewBag.IsEnrolled == true)
                 {
                     <form method="post" asp-action="Unenroll" asp-route-id="@Model.Id" class="d-inline">
                         <button type="submit" class="btn btn-danger">Huỷ đăng kí</button>
@@ -65,7 +65,7 @@
                 else
                 {
                     <form method="post" asp-action="Enroll" asp-route-id="@Model.Id" class="d-inline">
-                        <button type="submit" class="btn btn-success">Đã đăng kí</button>
+                        <button type="submit" class="btn btn-success">Đăng kí</button>
                     </form>
                 }
             </div>
