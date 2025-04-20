@@ -1,6 +1,6 @@
 ﻿@model LearnEDU.Models.Course
 @{
-    ViewData["Title"] = "Add Course";
+    ViewData["Title"] = "Thêm khoá học";
 }
 
 <h2>Thêm khóa học mới</h2>
@@ -8,71 +8,75 @@
 <form asp-action="Add" method="post" enctype="multipart/form-data">
     <div class="mb-3">
         <label asp-for="Name" class="form-label"></label>
-        <input asp-for="Name" class="form-control" />
+        <input asp-for="Name" class="form-control" placeholder="Nhập tên khóa học" />
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label asp-for="Description" class="form-label"></label>
-        <textarea asp-for="Description" class="form-control"></textarea>
+        <textarea asp-for="Description" class="form-control" placeholder="Nhập mô tả khóa học"></textarea>
         <span asp-validation-for="Description" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label asp-for="StartDate" class="form-label"></label>
-        <input asp-for="StartDate" type="date" class="form-control" />
+        <input asp-for="StartDate" type="date" class="form-control" placeholder="Chọn ngày bắt đầu" />
         <span asp-validation-for="StartDate" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label asp-for="EndDate" class="form-label"></label>
-        <input asp-for="EndDate" type="date" class="form-control" />
+        <input asp-for="EndDate" type="date" class="form-control" placeholder="Chọn ngày kết thúc" />
         <span asp-validation-for="EndDate" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label asp-for="Capacity" class="form-label"></label>
-        <input asp-for="Capacity" class="form-control" type="number" min="0" />
+        <input asp-for="Capacity" class="form-control" type="number" min="0" placeholder="Nhập số lượng học viên tối đa" />
         <span asp-validation-for="Capacity" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label class="form-label">Giá khóa học (nghìn VNĐ)</label>
-        <input asp-for="Price" type="number" class="form-control" min="0" />
+        <input asp-for="Price" type="number" class="form-control" min="0" placeholder="Nhập giá khóa học" />
         <span asp-validation-for="Price" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label asp-for="Level" class="form-label"></label>
-        <select asp-for="Level" class="form-control" asp-items="new SelectList(ViewBag.Levels)"></select>
+        <select asp-for="Level" class="form-control" asp-items="new SelectList(ViewBag.Levels)">
+            <option value="">Chọn cấp độ</option>
+        </select>
         <span asp-validation-for="Level" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label asp-for="Content" class="form-label"></label>
-        <textarea asp-for="Content" class="form-control" rows="4"></textarea>
+        <textarea asp-for="Content" class="form-control" rows="4" placeholder="Nhập nội dung khóa học"></textarea>
         <span asp-validation-for="Content" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label asp-for="InstructorName" class="form-label"></label>
-        <select asp-for="InstructorName" class="form-control" asp-items="new SelectList(ViewBag.Instructors)"></select>
+        <input asp-for="InstructorName" class="form-control" type="text" placeholder="Nhập tên giảng viên" />
         <span asp-validation-for="InstructorName" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label asp-for="Category" class="form-label"></label>
-        <select asp-for="Category" class="form-control" asp-items="new SelectList(ViewBag.Categories)"></select>
+        <select asp-for="Category" class="form-control" asp-items="new SelectList(ViewBag.Categories)">
+            <option value="">Chọn danh mục</option>
+        </select>
         <span asp-validation-for="Category" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
         <label for="ImageFile" class="form-label">Ảnh khóa học</label>
-        <input type="file" name="ImageFile" class="form-control" />
+        <input type="file" name="ImageFile" class="form-control" placeholder="Chọn ảnh khóa học" />
         <span class="text-danger">@ViewData["ImageError"]</span>
     </div>
 
-    <button type="submit" class="btn btn-primary">Thêm khóa học</button>
+    <button type="submit" class="btn btn-dark">Thêm khóa học</button>
 </form>
 
 @section Scripts {

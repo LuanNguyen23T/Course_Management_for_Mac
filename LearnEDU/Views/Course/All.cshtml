@@ -2,7 +2,7 @@
 @using X.PagedList.Mvc.Core
 
 @{
-    ViewData["Title"] = "All Courses";
+    ViewData["Title"] = "Tất cả khoá học";
 }
 @if (TempData["Error"] != null)
 {
@@ -15,7 +15,6 @@
 
 <h2 class="mb-4">Danh sách khóa học</h2>
 
-<!-- 🔍 Form Tìm kiếm nâng cao -->
 <form method="get" class="row g-3 mb-4">
     <div class="col-md-3">
         <input type="text" name="name" value="@ViewBag.SearchName" class="form-control" placeholder="Tên khóa học" />
@@ -23,57 +22,43 @@
     <div class="col-md-2">
         <input type="date" name="startDate" value="@ViewBag.SearchDate" class="form-control" />
     </div>
-    <div class="col-md-2">
-        <select name="instructor" class="form-select">
-            <option value="">-- Giảng viên --</option>
-            @foreach (var instructor in ViewBag.Instructors as List<string>)
-            {
-                <option value="@instructor" selected="@(instructor == ViewBag.SelectedInstructor)">
-                    @instructor
-                </option>
-            }
-        </select>
+    <div class="col-md-3">
+        <input type="text" name="instructor" value="@ViewBag.SelectedInstructor" class="form-control" placeholder="Tên giảng viên" />
     </div>
     <div class="col-md-2">
-        <select name="level" class="form-select">
-            <option value="">-- Trình độ --</option>
+        <select name="level" class="form-control">
+            <option value="">-- Cấp độ --</option>
             @foreach (var level in ViewBag.Levels as List<string>)
             {
-                <option value="@level" selected="@(level == ViewBag.SelectedLevel)">
-                    @level
-                </option>
+                <option value="@level" selected="@(level == ViewBag.SelectedLevel)">@level</option>
             }
         </select>
     </div>
     <div class="col-md-2">
-        <select name="category" class="form-select">
-            <option value="">-- Chủ đề --</option>
+        <select name="category" class="form-control">
+            <option value="">-- Danh mục --</option>
             @foreach (var category in ViewBag.Categories as List<string>)
             {
-                <option value="@category" selected="@(category == ViewBag.SelectedCategory)">
-                    @category
-                </option>
+                <option value="@category" selected="@(category == ViewBag.SelectedCategory)">@category</option>
             }
         </select>
     </div>
     <div class="col-md-2">
-        <select name="priceRange" class="form-select">
-            <option value="">-- Giá --</option>
+        <select name="priceRange" class="form-control">
+            <option value="">-- Khoảng giá --</option>
             <option value="lt500" selected="@(ViewBag.SelectedPriceRange == "lt500")">Dưới 500</option>
-            <option value="500to1000" selected="@(ViewBag.SelectedPriceRange == "500to1000")">500 - 1000</option>
+            <option value="500-1000" selected="@(ViewBag.SelectedPriceRange == "500-1000")">500 - 1000</option>
             <option value="gt1000" selected="@(ViewBag.SelectedPriceRange == "gt1000")">Trên 1000</option>
         </select>
     </div>
-    <div class="col-md-2 d-flex align-items-center">
-        <input type="checkbox" name="onlyUpcoming" value="true" class="form-check-input me-2"
-        @(Context.Request.Query["onlyUpcoming"] == "true" ? "checked" : "") />
-        <label class="form-check-label">Chỉ khóa học chưa bắt đầu</label>
+    <div class="col-md-2">
+        <div class="form-check">
+            <input type="checkbox" name="onlyUpcoming" class="form-check-input" id="onlyUpcoming" @(Convert.ToBoolean(ViewBag.OnlyUpcoming) ? "checked" : "") />
+            <label class="form-check-label" for="onlyUpcoming">Chỉ khóa học sắp tới</label>
+        </div>
     </div>
     <div class="col-md-2">
-        <button type="submit" class="btn btn-primary w-100">🔍 Tìm kiếm</button>
-    </div>
-    <div class="col-auto">
-        <a href="@Url.Action("All", "Course")" class="btn btn-secondary">Đặt lại</a>
+        <button type="submit" class="btn btn-dark w-100">Tìm kiếm</button>
     </div>
 </form>
 
@@ -101,18 +86,14 @@
                 <div class="card-footer bg-transparent text-center">
                     @if (ViewBag.Role == "Admin")
                     {
-                        <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-info btn-sm me-1">
-                            Details
-                        </a>
-                        <a href="@Url.Action("Edit", "Course", new { id = course.Id })" class="btn btn-warning btn-sm me-1">
-                            Edit
+                        <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-dark btn-sm me-1">
+                            Chi tiết
                         </a>
                         <a href="@Url.Action("Delete", "Course", new { id = course.Id })"
                            onclick="return confirm('Bạn có chắc muốn xóa khóa học này không?');"
                            class="btn btn-danger btn-sm">
-                            Delete
+                            Xoá
                         </a>
-                        ///Url.Action()
                     }
                     else
                     {

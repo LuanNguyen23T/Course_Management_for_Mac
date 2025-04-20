@@ -1,6 +1,6 @@
 ﻿@model LearnEDU.Models.Student
 @{
-    ViewData["Title"] = (ViewBag.IsAddAdmin == true) ? "Add Admin" : "Add Student";
+    ViewData["Title"] = (ViewBag.IsAddAdmin == true) ? "Thêm Admin" : "Thêm học sinh";
 }
 
 
@@ -10,62 +10,61 @@
 <form asp-action="@(ViewBag.IsAddAdmin == true ? "AddAdmin" : "Add")" method="post" enctype="multipart/form-data">
     <div class="row">
         <div class="col-md-6">
-            <label asp-for="Username"></label>
+            <label asp-for="Username">Tên Đăng Nhập</label>
             <input asp-for="Username" class="form-control" />
             <span asp-validation-for="Username" class="text-danger"></span> 
         </div>
         <div class="col-md-6">
-            <label asp-for="Password"></label>
+            <label asp-for="Password">Mật Khẩu</label>
             <input asp-for="Password" type="password" class="form-control" />
             <span asp-validation-for="Password" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="FirstName"></label>
+            <label asp-for="FirstName">Họ lót</label>
             <input asp-for="FirstName" class="form-control" />
             <span asp-validation-for="FirstName" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="LastName"></label>
+            <label asp-for="LastName">Tên</label>
             <input asp-for="LastName" class="form-control" />
             <span asp-validation-for="LastName" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="Email"></label>
+            <label asp-for="Email">Email</label>
             <input asp-for="Email" type="email" class="form-control" />
             <span asp-validation-for="Email" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="Phone"></label>
+            <label asp-for="Phone">Số điện thoại</label>
             <input asp-for="Phone" class="form-control" />
             <span asp-validation-for="Phone" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="Address"></label>
+            <label asp-for="Address">Địa chỉ</label>
             <input asp-for="Address" class="form-control" />
             <span asp-validation-for="Address" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="DateOfBirth"></label>
+            <label asp-for="DateOfBirth">Ngày sinh</label>
             <input asp-for="DateOfBirth" type="date" class="form-control" />
             <span asp-validation-for="DateOfBirth" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="Gender"></label>
+            <label asp-for="Gender">Giới tính</label>
             <select asp-for="Gender" class="form-control">
                 <option value="">-- Select Gender --</option>
                 <option>Nam</option>
                 <option>Nữ</option>
-                <option>Khác</option>
             </select>
             <span asp-validation-for="Gender" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="Education"></label>
+            <label asp-for="Education">Trường học</label>
             <input asp-for="Education" class="form-control" />
             <span asp-validation-for="Education" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="Image"></label>
+            <label asp-for="Image">Ảnh</label>
             <label for="ImageFile">Upload Image</label>
             <input type="file" name="ImageFile" class="form-control" />
         </div>
@@ -74,7 +73,7 @@
     <input type="hidden" name="Role" value="@(ViewBag.IsAddAdmin == true ? "Admin" : "Student")" />
 
     <br />
-    <button type="submit" class="btn btn-primary">Save</button>
+    <button type="submit" class="btn btn-dark">Save</button>
 </form>
 
 @section Scripts {

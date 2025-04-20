@@ -11,8 +11,8 @@
 <body>
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
-        <div class="bg-dark text-white p-3" style="min-height: 100vh; width: 250px;">
-            <h4 class="mb-4 fw-bold text-center">LearnEDU Admin</h4>
+        <div class="bg-dark text-white p-3" style="min-height: 100vh; width: 200px; position: fixed;">
+            <h4 class="mb-4 fw-bold text-center">LearnEDU</h4>
             <ul class="nav flex-column">
                 <li class="nav-item mb-2">
                     <a class="nav-link text-white" asp-controller="Dashboard" asp-action="Index">
@@ -20,35 +20,33 @@
                     </a>
                 </li>
 
-                <li class="nav-item mt-3 fw-bold text-uppercase small">👩‍🎓 Student</li>
+                <li class="nav-item mt-3 fw-bold text-uppercase small">Học Viên</li>
                 <li class="nav-item ps-3">
-                    <a class="nav-link text-white" asp-controller="Student" asp-action="All">All Student</a>
+                    <a class="nav-link text-white" asp-controller="Student" asp-action="All">Tất cả học viên</a>
                 </li>
                 <li class="nav-item ps-3">
-                    <a class="nav-link text-white" asp-controller="Student" asp-action="Add">Add Student</a>
-                </li>
-
-                <li class="nav-item mt-3 fw-bold text-uppercase small">📚 Course</li>
-                <li class="nav-item ps-3">
-                    <a class="nav-link text-white" asp-controller="Course" asp-action="All">All Course</a>
-                </li>
-                <li class="nav-item ps-3">
-                    <a class="nav-link text-white" asp-controller="Course" asp-action="Add">Add Course</a>
-                </li>
-                <li class="nav-item mt-3 fw-bold text-uppercase small">⚙️ Admin Capabilities</li>
-                <li class="nav-item ps-3">
-                    <a class="nav-link text-white" asp-controller="Student" asp-action="AllUser">All User</a>
-                </li>
-                <li class="nav-item ps-3">
-                    <a class="nav-link text-white" asp-controller="Student" asp-action="AddAdmin">Add Admin</a>
+                    <a class="nav-link text-white" asp-controller="Student" asp-action="Add">Thêm học viên</a>
                 </li>
 
+                <li class="nav-item mt-3 fw-bold text-uppercase small">Khoá Học</li>
+                <li class="nav-item ps-3">
+                    <a class="nav-link text-white" asp-controller="Course" asp-action="All">Tất cả khoá học</a>
+                </li>
+                <li class="nav-item ps-3">
+                    <a class="nav-link text-white" asp-controller="Course" asp-action="Add">Thêm khoá học</a>
+                </li>
+                <li class="nav-item mt-3 fw-bold text-uppercase small">Admin</li>
+                <li class="nav-item ps-3">
+                    <a class="nav-link text-white" asp-controller="Student" asp-action="AllUser">Tất cả tài khoản</a>
+                </li>
+                <li class="nav-item ps-3">
+                    <a class="nav-link text-white" asp-controller="Student" asp-action="AddAdmin">Thêm Admin</a>
+                </li>
             </ul>
-
         </div>
 
         <!-- Page Content -->
-        <div class="flex-grow-1">
+        <div class="flex-grow-1" style="margin-left: 200px;">
             <!-- Topbar -->
             @{
                 var userId = Context.Session.GetInt32("UserId");
@@ -58,10 +56,7 @@
             <nav class="navbar navbar-light bg-light border-bottom px-4">
                 <div class="d-flex justify-content-end w-100 align-items-center gap-4">
                     <!-- 👋 Xin chào -->
-                    <span class="fw-semibold text-dark">Xin chào @username!</span>
-
-                    <!-- 🔔 Notification -->
-                    <i class="bi bi-bell-fill fs-5 text-secondary"></i>
+                    <span class="fw-semibold text-dark">Xin chào @username</span>
 
                     <!-- 👤 Avatar dropdown -->
                     <div class="dropdown">
@@ -71,18 +66,13 @@
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li>
                                 <a class="dropdown-item" href="@Url.Action("Details", "Student", new { id = userId })">
-                                    📄 My Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="@Url.Action("Edit", "Student", new { id = userId })">
-                                    ✏️ Edit Profile
+                                    Thông tin cá nhân
                                 </a>
                             </li>
                             <li><hr class="dropdown-divider" /></li>
                             <li>
                                 <a class="dropdown-item text-danger" href="@Url.Action("Logout", "Account")">
-                                    🚪 Logout
+                                    Đăng xuất
                                 </a>
                             </li>
                         </ul>
@@ -90,9 +80,8 @@
                 </div>
             </nav>
 
-
             <!-- Main Body -->
-            <div class="container-fluid p-4">
+            <div class="container-fluid p-4" style="min-height: calc(100vh - 56px);">
                 @RenderBody()
             </div>
         </div>

@@ -4,7 +4,13 @@
     ViewData["Title"] = "Chi tiết khóa học";
 }
 
-<h2 class="mb-4">Chi tiết khóa học</h2>
+<h2 class="mb-4 d-flex justify-content-between align-items-center">
+    <span>Chi tiết khóa học</span>
+    @if (ViewBag.Role == "Admin")
+    {
+        <a href="@Url.Action("Edit", "Course", new { id = Model.Id })" class="btn btn-warning">Sửa</a>
+    }
+</h2>
 
 <div class="card shadow border-0">
     <div class="row g-0">
@@ -33,11 +39,19 @@
                 <p><strong>Thời lượng:</strong> @Model.Duration ngày</p>
                 <p><strong>Sĩ số:</strong> @Model.CurrentSize / @Model.Capacity</p>
                 <p><strong>Giá:</strong> @Model.Price nghìn VNĐ</p>
-                @if (ViewBag.Role == "Admin"){
+                @if (ViewBag.Role == "Admin")
+                {
                     <p><strong>Ngày tạo:</strong> @Model.DateCreated.ToString("dd/MM/yyyy")</p>
                 }
             </div>
         </div>
+
+        <div class="mt-4 d-flex justify-content-center">
+            <a href="@Url.Action("EnrolledStudents", "Course", new { id = Model.Id })"
+            class="btn btn-outline-primary p-3">
+                Xem học sinh đã đăng ký
+            </a>
+        </div>  
 
         @if (ViewBag.Role == "Student")
         {
@@ -45,20 +59,15 @@
                 @if (ViewBag.IsEnrolled)
                 {
                     <form method="post" asp-action="Unenroll" asp-route-id="@Model.Id" class="d-inline">
-                        <button type="submit" class="btn btn-danger">❌ Unenroll</button>
+                        <button type="submit" class="btn btn-danger">Huỷ đăng kí</button>
                     </form>
                 }
                 else
                 {
                     <form method="post" asp-action="Enroll" asp-route-id="@Model.Id" class="d-inline">
-                        <button type="submit" class="btn btn-success">✅ Enroll</button>
+                        <button type="submit" class="btn btn-success">Đã đăng kí</button>
                     </form>
                 }
-
-                <a href="@Url.Action("EnrolledStudents", "Course", new { id = Model.Id })"
-                   class="btn btn-outline-primary d-inline">
-                    👥 View Enrolled Students
-                </a>
             </div>
 
             @if (TempData["EnrollError"] != null)
@@ -71,18 +80,5 @@
                 <div class="alert alert-success mt-3">@TempData["EnrollSuccess"]</div>
             }
         }
-        else
-        {
-            <div class="mt-4">
-                <a href="@Url.Action("EnrolledStudents", "Course", new { id = Model.Id })"
-                   class="btn btn-outline-primary">
-                    👥 View Enrolled Students
-                </a>
-            </div>
-        }
-
-
     </div>
-
 </div>
-

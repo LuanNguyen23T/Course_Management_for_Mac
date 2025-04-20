@@ -1,43 +1,43 @@
 ﻿@model List<LearnEDU.Models.Student>
 @{
-    ViewData["Title"] = "All User";
+    ViewData["Title"] = "Danh sách toàn bộ tài khoản";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2 class="mb-4">👥 Danh sách toàn bộ tài khoản</h2>
+<h2 class="mb-4">Danh sách toàn bộ tài khoản</h2>
 
 <!-- 🔍 Filter Form -->
 <form method="get" class="row g-3 mb-4">
     <div class="col-md-2">
-        <input type="text" name="username" value="@ViewBag.Username" class="form-control" placeholder="Username" />
+        <input type="text" name="username" value="@ViewBag.Username" class="form-control" placeholder="Tên đăng nhập" />
     </div>
     <div class="col-md-2">
         <input type="email" name="email" value="@ViewBag.Email" class="form-control" placeholder="Email" />
     </div>
     <div class="col-md-2">
-        <input type="text" name="phone" value="@ViewBag.Phone" class="form-control" placeholder="Phone" />
+        <input type="text" name="phone" value="@ViewBag.Phone" class="form-control" placeholder="Số điện thoại" />
     </div>
     <div class="col-md-2">
         <select name="role" class="form-select">
             <option value="">-- Role --</option>
-            <option value="Student" selected="@(ViewBag.RoleFilter == "Student")">Student</option>
+            <option value="Student" selected="@(ViewBag.RoleFilter == "Student")">Học viên</option>
             <option value="Admin" selected="@(ViewBag.RoleFilter == "Admin")">Admin</option>
         </select>
     </div>
     <div class="col-md-2">
-        <button type="submit" class="btn btn-primary w-100">🔍 Lọc</button>
+        <button type="submit" class="btn btn-dark w-100">Lọc</button>
     </div>
 </form>
 
 <table class="table table-bordered table-striped">
     <thead class="table-dark">
         <tr>
-            <th>Username</th>
-            <th>Password</th>
+            <th>Tên đăng nhập</th>
+            <th>Họ tên</th>
             <th>Email</th>
-            <th>Phone</th>
-            <th>Role</th>
-            <th>Actions</th>
+            <th>Số điện thoại</th>
+            <th>Vai trò</th>
+            <th>Tác vụ</th>
         </tr>
     </thead>
     <tbody>
@@ -45,16 +45,15 @@
         {
             <tr>
                 <td>@student.Username</td>
-                <td>@student.Password</td>
+                <td>@student.FirstName @student.LastName</td> 
                 <td>@student.Email</td>
                 <td>@student.Phone</td>
                 <td>@student.Role</td>
                 <td>
-                    <a class="btn btn-info btn-sm" href="@Url.Action("Details", "Student", new { id = student.Id })">Details</a>
-                    <a class="btn btn-warning btn-sm" href="@Url.Action("Edit", "Student", new { id = student.Id })">Edit</a>
+                    <a class="btn btn-secondary btn-sm" href="@Url.Action("Details", "Student", new { id = student.Id })">Chi tiết</a>
                     <a class="btn btn-danger btn-sm" href="@Url.Action("Delete", "Student", new { id = student.Id })"
                        onclick="return confirm('Bạn có chắc muốn xóa người dùng này không?');">
-                        Delete
+                        Xoá
                     </a>
                 </td>
             </tr>

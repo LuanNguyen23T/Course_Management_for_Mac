@@ -15,14 +15,14 @@
         <input type="date" id="toDate" name="toDate" class="form-control" value="@ViewBag.ToDate" />
     </div>
     <div class="col-md-4 d-flex align-items-end">
-        <button type="submit" class="btn btn-primary w-100">📅 Áp dụng</button>
+        <button type="submit" class="btn btn-dark w-100">Áp dụng</button> <!-- Đổi màu nút thành đen -->
     </div>
 </form>
 
 <!-- Tổng quan -->
 <div class="row">
     <div class="col-md-6 mb-4">
-        <div class="card bg-primary text-white shadow">
+        <div class="card bg-dark text-white shadow"> <!-- Đổi màu box thành đen -->
             <div class="card-body">
                 <h5 class="card-title">Tổng số học sinh</h5>
                 <p class="display-6">@ViewBag.TotalStudents</p>
@@ -30,7 +30,7 @@
         </div>
     </div>
     <div class="col-md-6 mb-4">
-        <div class="card bg-success text-white shadow">
+        <div class="card bg-dark text-white shadow"> <!-- Đổi màu box thành đen -->
             <div class="card-body">
                 <h5 class="card-title">Tổng số khóa học</h5>
                 <p class="display-6">@ViewBag.TotalCourses</p>
@@ -39,9 +39,9 @@
     </div>
 </div>
 <div class="col-md-6 mb-4">
-    <div class="card bg-warning text-white shadow">
+    <div class="card bg-dark text-white shadow"> <!-- Đổi màu box thành đen -->
         <div class="card-body">
-            <h5 class="card-title">💰 Tổng doanh thu trong khoảng thời gian</h5>
+            <h5 class="card-title">Tổng doanh thu trong khoảng thời gian</h5>
             <p class="display-6">@ViewBag.TotalRevenue</p>
         </div>
     </div>
@@ -59,4 +59,3 @@
         }
     </ul>
 </div>
-

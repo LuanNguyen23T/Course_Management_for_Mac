@@ -26,7 +26,7 @@ namespace LearnEDU.Controllers
             return View();
         }   
         [HttpGet]
-        public IActionResult Edit(int id)
+        public IActionResult Details(int id)
         {
             var role = HttpContext.Session.GetString("Role");
             if (role ==null)
@@ -136,13 +136,8 @@ namespace LearnEDU.Controllers
             return RedirectToAction("AllUser");
         }
 
-
-
-
-
-
         [HttpPost]
-        public IActionResult Add(Student student, IFormFile? ImageFile)
+        public IActionResult Add(Student student, IFormFile? ImageFile, string? InstructorName)
         {
             var role = HttpContext.Session.GetString("Role");
             if (role != "Admin")
@@ -161,6 +156,8 @@ namespace LearnEDU.Controllers
                 ModelState.AddModelError("Phone", "Số điện thoại phải gồm đúng 10 chữ số.");
             if (student.DateOfBirth > DateTime.Today)
                 ModelState.AddModelError("DateOfBirth", "Ngày sinh không được lớn hơn ngày hiện tại.");
+            if (string.IsNullOrWhiteSpace(InstructorName))
+                ModelState.AddModelError("InstructorName", "Tên giảng viên không được để trống.");
 
             if (!ModelState.IsValid)
             {
@@ -178,6 +175,7 @@ namespace LearnEDU.Controllers
             student.DateRegister = DateTime.Now;
             student.CurrentBalance = 100;
             student.Role = "Student";
+            student.InstructorName = InstructorName; // Assign the instructor name
 
             if (ImageFile != null && ImageFile.Length > 0)
             {
@@ -274,26 +272,8 @@ namespace LearnEDU.Controllers
         }
 
 
-        //Xem detail cua hoc sinh
-        public IActionResult Details(int id)
-        {
-            var role = HttpContext.Session.GetString("Role");
-            if (role == null)
-            {
-                return RedirectToAction("AccessDenied", "Account"); // hoặc về trang Home
-            }
-            var student = _context.Students.FirstOrDefault(s => s.Id == id);
-            if (student == null)
-            {
-                return NotFound();
-            }
-            ViewBag.RoleView = student.Role;
-            ViewBag.Role = HttpContext.Session.GetString("Role");
-
-            return View(student);
-        }
         [HttpPost]
-        public IActionResult Edit(Student student, IFormFile? ImageFile)
+        public IActionResult Details(Student student, IFormFile? ImageFile)
         {
             var role = HttpContext.Session.GetString("Role");
             if (role == null)
@@ -380,10 +360,6 @@ namespace LearnEDU.Controllers
             else
                 return RedirectToAction("Index", "StudentHome");
         }
-
-
-
-
 
     }
 }

@@ -21,6 +21,7 @@ public class DashboardController : Controller
         }
         fromDate ??= DateTime.Today.AddDays(-7);
         toDate ??= DateTime.Today;
+        toDate = toDate.Value.AddDays(1).AddTicks(-1); // 2025-04-19 23:59:59.9999999
 
         ViewBag.FromDate = fromDate.Value.ToString("yyyy-MM-dd");
         ViewBag.ToDate = toDate.Value.ToString("yyyy-MM-dd");
@@ -46,8 +47,6 @@ public class DashboardController : Controller
             .Where(e => e.EnrollDate >= fromDate && e.EnrollDate <= toDate)
             .Sum(e => e.Course.Price);
         ViewBag.TotalRevenue = totalRevenue;
-
-
 
         return View();
     }

@@ -32,14 +32,14 @@ namespace LearnEDU.Controllers
         [HttpGet]
         [HttpGet]
         public IActionResult All(
-    string name,
-    DateTime? startDate,
-    string instructor,
-    string level,
-    string category,
-    string priceRange,
-    bool onlyUpcoming = false,
-    int? page = 1)
+            string name,
+            DateTime? startDate,
+            string instructor,
+            string level,
+            string category,
+            string priceRange,
+            bool onlyUpcoming = false,
+            int? page = 1)
         {
             var role = HttpContext.Session.GetString("Role");
             if (role == null)

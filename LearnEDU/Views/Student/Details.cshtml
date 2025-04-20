@@ -1,51 +1,115 @@
 ﻿@model LearnEDU.Models.Student
 @{
-    @if (ViewBag.RoleView == "Student") ViewData["Title"] = "Student Details";
-    else ViewData["Title"] = "Admin Details";
+    ViewData.ModelState.Remove("ImageFile"); // Bỏ lỗi validation bắt buộc cho ảnh
+}
+@{
+    @if (ViewBag.Role == "Admin")  ViewData["Title"] = "Chi tiết thông tin Admin";
+    else ViewData["Title"] = "Chi tiết thông tin học sinh";
 }
 
-@if(ViewBag.RoleView=="Student"){ 
-    <h2 class="mb-4">Student Details</h2>
+@if (ViewBag.Role == "Admin"){
+    <h2>Chi tiết thông tin Admin</h2>
 }
 else{
-    <h2 class="mb-4">Admin Details</h2>
+    <h2>Chi tiết thông tin học sinh</h2>
 }
 
-<div class="card" style="max-width: 600px;">
-    <div class="card-body">
+
+<form asp-action="Details" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="row">
+        @if (ViewBag.Role == "Admin")
+        {
+            <div class="col-md-6">
+                <label asp-for="Username">Tên đăng nhập</label>
+                <input asp-for="Username" class="form-control" />
+            </div>
+
+            <div class="col-md-6">
+                <label>Mật khẩu</label>
+                <input type="password" name="Password" class="form-control" value="@Model.Password" />
+                <span class="text-muted small">Mật khẩu hiện tại sẽ được giữ nguyên nếu không thay đổi</span>
+            </div>
+        }
+        else
+        {
+            <input type="hidden" asp-for="Username" />
+            <input type="hidden" asp-for="Password" />
+        }
+        <div class="col-md-6">
+            <label asp-for="FirstName">Họ lót</label>
+            <input asp-for="FirstName" class="form-control" />
+        </div>
+        <div class="col-md-6">
+            <label asp-for="LastName">Tên</label>
+            <input asp-for="LastName" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Email">Email</label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Phone">Số điện thoại</label>
+            <input asp-for="Phone" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Address">Địa chỉ</label>
+            <input asp-for="Address" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="DateOfBirth">Ngày sinh</label>
+            <input asp-for="DateOfBirth" type="date" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Gender">Giới tính</label>
+            <select asp-for="Gender" class="form-control">
+                <option value="">-- Chọn giới tính --</option>
+                <option>Nam</option>
+                <option>Nữ</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Education">Trường học</label>
+            <input asp-for="Education" class="form-control" />
+        </div>
+        @if (ViewBag.Role == "Admin")
+        {
+            <div class="mb-3">
+                <label for="CurrentBalance" class="form-label">Số dư (VNĐ)</label>
+                <input asp-for="CurrentBalance" class="form-control" />
+                <span asp-validation-for="CurrentBalance" class="text-danger"></span>
+            </div>
+        }
+        <div class="col-md-6">
+            <label>Thay ảnh đại diện (nếu muốn)</label>
+            <input type="file" name="ImageFile" class="form-control" />
+        </div>
+
         @if (!string.IsNullOrEmpty(Model.Image))
         {
-            <div class="text-center mb-3">
-                <img src="@Model.Image" alt="Student Image" width="150" height="150" class="rounded" />
+            <div class="col-md-6 mt-2">
+                <label>Ảnh hiện tại:</label><br />
+                <img src="@Model.Image" width="120" height="120" class="rounded" />
             </div>
-        }
-
-        <p><strong>Username:</strong> @Model.Username</p>
-        @if (ViewBag.Role == "Admin")
-        {
-            <p><strong>Password:</strong> @Model.Password</p>
-        }
-        <p><strong>Full Name:</strong> @Model.FirstName @Model.LastName</p>
-        <p><strong>Email:</strong> @Model.Email</p>
-        <p><strong>Phone:</strong> @Model.Phone</p>
-        <p><strong>Address:</strong> @Model.Address</p>
-        <p><strong>Date of Birth:</strong> @Model.DateOfBirth.ToString("dd/MM/yyyy")</p>
-        <p><strong>Gender:</strong> @Model.Gender</p>
-        @if (ViewBag.Role == "Student")
-        {
-            <div class="mb-3">
-                <p><strong>Education:</strong> @Model.Education</p>
-            </div>
-        }
-        @if (ViewBag.Role == "Admin")
-        {
-            <div class="mb-3">
-                <p><strong>CurrentBalance:</strong> @Model.CurrentBalance</p>
-            </div>
-        }
-        @if (ViewBag.Role == "Admin"){
-            <p><strong>Date Register:</strong> @Model.DateRegister.ToString("dd/MM/yyyy")</p>
         }
     </div>
-</div>
 
+    <br />
+    <button type="submit" class="btn btn-dark">Lưu thay đổi</button>
+</form>
+<div asp-validation-summary="All" class="text-danger mb-3"></div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+@if (ViewBag.DebugLog != null)
+{
+    <pre class="text-danger">@ViewBag.DebugLog</pre>
+}
