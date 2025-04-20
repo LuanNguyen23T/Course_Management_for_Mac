@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RavEr1J+nGSwyYn4+L7OlKE5X2/QLIgcuLO68mqkcMY=",
+  "Hash": "kwPYuyNfJmeaHUv0fs+nTlGeDK5+l/3I0w63dfPZekQ=",
   "Source": "LearnEDU",
   "BasePath": "_content/LearnEDU",
   "Mode": "Default",
@@ -1606,8 +1606,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "9hmjarkcfg",
-      "Integrity": "jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590=",
+      "Fingerprint": "mtap1k644u",
+      "Integrity": "9isgFykJ13WoylC6IkZQ6lmcIKNDkkMDlHzNlxrkSgE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/Trangchu.jpg"
@@ -4334,51 +4334,6 @@
       ]
     },
     {
-      "Route": "images/Trangchu.9hmjarkcfg.jpg",
-      "AssetFile": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/Trangchu.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "391523"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 04:16:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "9hmjarkcfg"
-        },
-        {
-          "Name": "label",
-          "Value": "images/Trangchu.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590="
-        }
-      ]
-    },
-    {
       "Route": "images/Trangchu.jpg",
       "AssetFile": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/Trangchu.jpg",
       "Selectors": [],
@@ -4389,7 +4344,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "391523"
+          "Value": "635764"
         },
         {
           "Name": "Content-Type",
@@ -4397,11 +4352,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590=\""
+          "Value": "\"9isgFykJ13WoylC6IkZQ6lmcIKNDkkMDlHzNlxrkSgE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 04:16:36 GMT"
+          "Value": "Sun, 20 Apr 2025 09:37:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4411,7 +4366,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590="
+          "Value": "sha256-9isgFykJ13WoylC6IkZQ6lmcIKNDkkMDlHzNlxrkSgE="
+        }
+      ]
+    },
+    {
+      "Route": "images/Trangchu.mtap1k644u.jpg",
+      "AssetFile": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/Trangchu.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "635764"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9isgFykJ13WoylC6IkZQ6lmcIKNDkkMDlHzNlxrkSgE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 09:37:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mtap1k644u"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Trangchu.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9isgFykJ13WoylC6IkZQ6lmcIKNDkkMDlHzNlxrkSgE="
         }
       ]
     },

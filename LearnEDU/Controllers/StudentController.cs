@@ -61,10 +61,19 @@ namespace LearnEDU.Controllers
             _context.Students.Remove(student);
             _context.SaveChanges();
 
-            if (ViewBag.Role == "Admin")
-                return RedirectToAction("Index", "Dashboard");
+            // if (ViewBag.Role == "Admin")
+            //     return RedirectToAction("Index", "Dashboard");
+            // else
+            //     return RedirectToAction("Index", "StudentHome");
+
+            if(role == "Admin")
+            {
+                return RedirectToAction("AllUser", "Student");
+            }
             else
+            {
                 return RedirectToAction("Index", "StudentHome");
+            }
         }
 
         [HttpGet]

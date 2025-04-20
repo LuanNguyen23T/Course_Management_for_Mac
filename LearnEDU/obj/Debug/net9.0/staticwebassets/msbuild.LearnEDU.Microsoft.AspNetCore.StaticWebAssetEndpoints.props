@@ -84,17 +84,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"t6y3rs53oj"},{"Name":"integrity","Value":"sha256-1cpKq7KhsswincGq55BaDBVW0O2BIfCu6Nv9WWTJAHM="},{"Name":"label","Value":"_content/LearnEDU/images/dc5fdb39-c9c0-466d-856a-35b49ac3781c.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"136174"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00221cpKq7KhsswincGq55BaDBVW0O2BIfCu6Nv9WWTJAHM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 02:38:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/LearnEDU/images/Trangchu.9hmjarkcfg.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Trangchu.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9hmjarkcfg"},{"Name":"integrity","Value":"sha256-jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590="},{"Name":"label","Value":"_content/LearnEDU/images/Trangchu.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"391523"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 04:16:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/LearnEDU/images/Trangchu.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Trangchu.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"391523"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 04:16:36 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9isgFykJ13WoylC6IkZQ6lmcIKNDkkMDlHzNlxrkSgE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"635764"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229isgFykJ13WoylC6IkZQ6lmcIKNDkkMDlHzNlxrkSgE=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 09:37:50 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/LearnEDU/images/Trangchu.mtap1k644u.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Trangchu.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mtap1k644u"},{"Name":"integrity","Value":"sha256-9isgFykJ13WoylC6IkZQ6lmcIKNDkkMDlHzNlxrkSgE="},{"Name":"label","Value":"_content/LearnEDU/images/Trangchu.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"635764"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229isgFykJ13WoylC6IkZQ6lmcIKNDkkMDlHzNlxrkSgE=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 09:37:50 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/LearnEDU/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

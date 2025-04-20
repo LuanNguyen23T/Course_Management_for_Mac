@@ -138,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9hmjarkcfg</Fingerprint>
-      <Integrity>jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590=</Integrity>
+      <Fingerprint>mtap1k644u</Fingerprint>
+      <Integrity>9isgFykJ13WoylC6IkZQ6lmcIKNDkkMDlHzNlxrkSgE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Trangchu.jpg'))</OriginalItemSpec>

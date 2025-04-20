@@ -1657,51 +1657,6 @@
       ]
     },
     {
-      "Route": "images/Trangchu.9hmjarkcfg.jpg",
-      "AssetFile": "images/Trangchu.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "391523"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 04:16:36 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "9hmjarkcfg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590="
-        },
-        {
-          "Name": "label",
-          "Value": "images/Trangchu.jpg"
-        }
-      ]
-    },
-    {
       "Route": "images/Trangchu.jpg",
       "AssetFile": "images/Trangchu.jpg",
       "Selectors": [],
@@ -1716,7 +1671,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "391523"
+          "Value": "635764"
         },
         {
           "Name": "Content-Type",
@@ -1724,17 +1679,62 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590=\""
+          "Value": "\"9isgFykJ13WoylC6IkZQ6lmcIKNDkkMDlHzNlxrkSgE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 04:16:36 GMT"
+          "Value": "Sun, 20 Apr 2025 09:37:50 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590="
+          "Value": "sha256-9isgFykJ13WoylC6IkZQ6lmcIKNDkkMDlHzNlxrkSgE="
+        }
+      ]
+    },
+    {
+      "Route": "images/Trangchu.mtap1k644u.jpg",
+      "AssetFile": "images/Trangchu.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "635764"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9isgFykJ13WoylC6IkZQ6lmcIKNDkkMDlHzNlxrkSgE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 09:37:50 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mtap1k644u"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9isgFykJ13WoylC6IkZQ6lmcIKNDkkMDlHzNlxrkSgE="
+        },
+        {
+          "Name": "label",
+          "Value": "images/Trangchu.jpg"
         }
       ]
     },
