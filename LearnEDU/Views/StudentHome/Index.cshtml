@@ -35,9 +35,14 @@
                     <h5 class="card-title">@course.Name</h5>
                     <p class="card-text">@course.InstructorName - @course.Category</p>
                     <p class="text-muted">👥 @course.CurrentSize / @course.Capacity</p>
-                    <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-dark btn-sm">
-                        @(course.StartDate <= DateTime.Now ? "Đã bắt đầu" : "Chi tiết")
-                    </a>
+                    @if (course.StartDate <= DateTime.Now)
+                    {
+                        <span class="btn btn-secondary btn-sm disabled">Đã bắt đầu</span>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-dark btn-sm">Chi tiết</a>
+                    }
                 </div>
             </div>
         </div>
@@ -61,11 +66,16 @@
                 }
                 <div class="card-body">
                     <h5 class="card-title">@course.Name</h5>
-                    <p class="card-text">💰 Giá: @course.Price nghìn VNĐ</p>
-                    <p class="text-muted">📅 Bắt đầu: @course.StartDate.ToString("dd/MM/yyyy")</p>
-                    <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-dark btn-sm">
-                        @(course.StartDate <= DateTime.Now ? "Đã bắt đầu" : "Xem ngay")
-                    </a>
+                    <p class="card-text">Giá: @course.Price nghìn VNĐ</p>
+                    <p class="text-muted">Bắt đầu: @course.StartDate.ToString("dd/MM/yyyy")</p>
+                    @if (course.StartDate <= DateTime.Now)
+                    {
+                        <span class="btn btn-secondary btn-sm disabled">Đã bắt đầu</span>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-dark btn-sm">Xem ngay</a>
+                    }
                 </div>
             </div>
         </div>
@@ -91,9 +101,14 @@
                     <h5 class="card-title">@course.Name</h5>
                     <p class="card-text">📅 Ngày bắt đầu: @course.StartDate.ToString("dd/MM/yyyy")</p>
                     <p class="text-muted">👨‍🏫 Giảng viên: @course.InstructorName</p>
-                    <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-dark btn-sm">
-                        @(course.StartDate <= DateTime.Now ? "Đã bắt đầu" : "Chi tiết")
-                    </a>
+                    @if (course.StartDate <= DateTime.Now)
+                    {
+                        <span class="btn btn-secondary btn-sm disabled">Đã bắt đầu</span>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-dark btn-sm">Chi tiết</a>
+                    }
                 </div>
             </div>
         </div>
@@ -121,9 +136,14 @@
                         <h5 class="card-title">@course.Name</h5>
                         <p class="card-text">👨‍🏫 @course.InstructorName</p>
                         <p class="text-muted">👥 @course.CurrentSize / @course.Capacity</p>
-                        <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-outline-dark btn-sm">
-                            @(course.StartDate <= DateTime.Now ? "Đã bắt đầu" : "Xem khóa học")
-                        </a>
+                        @if (course.StartDate <= DateTime.Now)
+                        {
+                            <span class="btn btn-secondary btn-sm disabled">Đã bắt đầu</span>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-outline-dark btn-sm">Xem khóa học</a>
+                        }
                     </div>
                 </div>
             </div>

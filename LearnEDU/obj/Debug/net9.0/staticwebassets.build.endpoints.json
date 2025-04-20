@@ -1657,6 +1657,88 @@
       ]
     },
     {
+      "Route": "images/Trangchu.9hmjarkcfg.jpg",
+      "AssetFile": "images/Trangchu.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "391523"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 04:16:36 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9hmjarkcfg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590="
+        },
+        {
+          "Name": "label",
+          "Value": "images/Trangchu.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/Trangchu.jpg",
+      "AssetFile": "images/Trangchu.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "391523"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 04:16:36 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jc5kG5qUvPcuVP9uiR3Hoegi0hzeaqHpUZNOqdDY590="
+        }
+      ]
+    },
+    {
       "Route": "images/dc5fdb39-c9c0-466d-856a-35b49ac3781c.png",
       "AssetFile": "images/dc5fdb39-c9c0-466d-856a-35b49ac3781c.png",
       "Selectors": [],

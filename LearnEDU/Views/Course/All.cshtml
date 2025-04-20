@@ -97,9 +97,16 @@
                     }
                     else
                     {
-                        <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-dark btn-sm">
-                            Chi tiết
-                        </a>
+                        @if (course.StartDate <= DateTime.Now)
+                        {
+                            <span class="btn btn-secondary btn-sm disabled">Đã bắt đầu</span>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-dark btn-sm">
+                                Chi tiết
+                            </a>
+                        }
                     }
                 </div>
             </div>
