@@ -21,8 +21,16 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/072de711-ce41-44e2-af85-efee4a9d4f75.jpeg",
+      "PackagePath": "staticwebassets/images/072de711-ce41-44e2-af85-efee4a9d4f75.jpeg"
+    },
+    {
       "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/61083383-a999-447b-9910-5789442093c8.png",
       "PackagePath": "staticwebassets/images/61083383-a999-447b-9910-5789442093c8.png"
+    },
+    {
+      "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/dc5fdb39-c9c0-466d-856a-35b49ac3781c.png",
+      "PackagePath": "staticwebassets/images/dc5fdb39-c9c0-466d-856a-35b49ac3781c.png"
     },
     {
       "Id": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/js/site.js",

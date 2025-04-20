@@ -24,12 +24,15 @@ namespace LearnEDU.Controllers
                 return RedirectToAction("AccessDenied", "Account"); // hoặc về trang Home
             }
 
-            ViewBag.Instructors = GetInstructorList();
+            ViewBag.Instructors = _context.Courses
+                .Select(c => c.InstructorName)
+                .Where(name => !string.IsNullOrEmpty(name)) // Loại bỏ các giá trị null hoặc rỗng
+                .Distinct() // Lấy danh sách không trùng lặp
+                .ToList();
             ViewBag.Categories = GetCategoryList();
             ViewBag.Levels = GetLevelList(); 
             return View();
         }
-        [HttpGet]
         [HttpGet]
         public IActionResult All(
             string name,
@@ -58,8 +61,7 @@ namespace LearnEDU.Controllers
                 courses = courses.Where(c => c.StartDate >= startDate.Value);
 
             if (!string.IsNullOrEmpty(instructor))
-                courses = courses.Where(c => c.InstructorName == instructor);
-
+                courses = courses.Where(c => c.InstructorName.ToLower().Contains(instructor.ToLower())); 
             if (!string.IsNullOrEmpty(level))
                 courses = courses.Where(c => c.Level == level);
 
@@ -93,7 +95,6 @@ namespace LearnEDU.Controllers
             int pageNumber = page ?? 1;
 
             // 🧾 Gán lại dropdown list
-            ViewBag.Instructors = GetInstructorList();
             ViewBag.Levels = GetLevelList();
             ViewBag.Categories = GetCategoryList();
 
@@ -160,7 +161,11 @@ namespace LearnEDU.Controllers
             var course = _context.Courses.FirstOrDefault(c => c.Id == id);
             if (course == null) return NotFound();
 
-            ViewBag.Instructors = GetInstructorList();
+            ViewBag.Instructors = _context.Courses
+                .Select(c => c.InstructorName)
+                .Where(name => !string.IsNullOrEmpty(name)) 
+                .Distinct() 
+                .ToList();
             ViewBag.Categories = GetCategoryList();
             ViewBag.Levels = GetLevelList();
 
@@ -334,7 +339,6 @@ namespace LearnEDU.Controllers
                     }
                 }
 
-                ViewBag.Instructors = GetInstructorList();
                 ViewBag.Categories = GetCategoryList();
                 ViewBag.Levels = GetLevelList();
                 return View(course);
@@ -455,7 +459,6 @@ namespace LearnEDU.Controllers
             }
 
             // Nếu có lỗi thì nạp lại dropdown
-            ViewBag.Instructors = GetInstructorList();
             ViewBag.Categories = GetCategoryList();
             ViewBag.Levels = GetLevelList(); // ✅ Thêm danh sách level cố định
 
@@ -504,7 +507,7 @@ namespace LearnEDU.Controllers
                 courseQuery = courseQuery.Where(c => c.StartDate >= startDate.Value);
 
             if (!string.IsNullOrEmpty(instructor))
-                courseQuery = courseQuery.Where(c => c.InstructorName == instructor);
+                courseQuery = courseQuery.Where(c => c.InstructorName.ToLower().Contains(instructor.ToLower())); 
 
             if (!string.IsNullOrEmpty(level))
                 courseQuery = courseQuery.Where(c => c.Level == level);
@@ -533,7 +536,6 @@ namespace LearnEDU.Controllers
 
             // ✅ Gán lại dropdown & filter ViewBag
             ViewBag.MyCourseMode = true;
-            ViewBag.Instructors = GetInstructorList();
             ViewBag.Levels = GetLevelList();
             ViewBag.Categories = GetCategoryList();
 
@@ -554,28 +556,22 @@ namespace LearnEDU.Controllers
 
 
 
-        private List<string> GetInstructorList()
-        {
-            return new List<string>
-            {
-                "Nguyễn Văn Toàn",
-                "Trần Thị Phượng",
-                "Robert Junior",
-                "Alex Michael",
-                "Isagi Yoichi", 
-                "Nagi Senshiroi"
-            };
-        }
+        // private List<string> GetInstructorList()
+        // {
+        //     return new List<string>
+        //     {
+        //         "Võ Đức Hoàng",
+        //         "Nguyễn Thị Lệ Quyên",
+        //         "Sun*"
+        //     };
+        // }
 
         private List<string> GetCategoryList()
         {
             return new List<string>
             {
                 "IT",
-                "Design",
-                "Marketing",
-                "Finance",
-                "Literature",
+                "Tiếng Nhật",
             };
         }
     }

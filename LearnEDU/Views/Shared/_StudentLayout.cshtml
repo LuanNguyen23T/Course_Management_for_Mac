@@ -45,18 +45,6 @@
                         <span class="fw-semibold text-dark">Xin chào @username!</span>
                     </li>
 
-                    <!-- 💰 Balance -->
-                    <li class="nav-item me-3">
-                        <span class="fw-bold text-success">
-                            💰 @ViewBag.CurrentBalance nghìn VNĐ
-                        </span>
-                    </li>
-
-                    <!-- 🔔 Notification -->
-                    <li class="nav-item me-3">
-                        <i class="bi bi-bell fs-5"></i>
-                    </li>
-
                     <!-- Avatar dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="avatarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -65,23 +53,18 @@
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="avatarDropdown">
                             <li>
                                 <a class="dropdown-item" href="@Url.Action("Details", "Student", new { id = userId })">
-                                    📄 My Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="@Url.Action("Edit", "Student", new { id = userId })">
-                                    ✏️ Edit Profile
+                                    Thông tin cá nhân
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="@Url.Action("MyCourse", "Course")">
-                                    📚 My Course
+                                    Khoá học của tôi
                                 </a>
                             </li>
                             <li><hr class="dropdown-divider" /></li>
                             <li>
                                 <a class="dropdown-item text-danger" href="@Url.Action("Logout", "Account")">
-                                    🚪 Logout
+                                    Đăng xuất
                                 </a>
                             </li>
                         </ul>

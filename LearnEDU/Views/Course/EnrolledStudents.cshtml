@@ -5,8 +5,8 @@
 
 <h4>👥 Học sinh đã đăng ký khóa học: @ViewBag.CourseName</h4>
 
-<table class="table table-bordered mt-3">
-    <thead class="table-light">
+<table class="table table-bordered table-striped mt-3">
+    <thead class="table-dark">
         <tr>
             <th>Username</th>
             <th>Họ tên</th>
@@ -26,11 +26,16 @@
                 <td>@e.Student.Gender</td>
                 <td>@e.EnrollDate.ToString("HH:mm:ss dd/MM/yyyy")</td>
                 <td>
-                    <a class="btn btn-sm btn-info" href="@Url.Action("Details", "Student", new { id = e.Student.Id })">
+                    <a class="btn btn-sm btn-dark" href="@Url.Action("Details", "Student", new { id = e.Student.Id })">
                         Details
+                    </a>
+                    <a class="btn btn-danger btn-sm" href="@Url.Action("Delete", "Student", new { id = e.Student.Id })"
+                       onclick="return confirm('Bạn có chắc muốn xóa học sinh này không?');">
+                        Xoá
                     </a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
+

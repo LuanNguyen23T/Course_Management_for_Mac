@@ -29,6 +29,7 @@ namespace LearnEDU.Controllers
         public IActionResult Details(int id)
         {
             var role = HttpContext.Session.GetString("Role");
+            Console.WriteLine("Role: " + role);
             if (role ==null)
             {
                 return RedirectToAction("AccessDenied", "Account"); // hoặc về trang Home
@@ -156,8 +157,6 @@ namespace LearnEDU.Controllers
                 ModelState.AddModelError("Phone", "Số điện thoại phải gồm đúng 10 chữ số.");
             if (student.DateOfBirth > DateTime.Today)
                 ModelState.AddModelError("DateOfBirth", "Ngày sinh không được lớn hơn ngày hiện tại.");
-            if (string.IsNullOrWhiteSpace(InstructorName))
-                ModelState.AddModelError("InstructorName", "Tên giảng viên không được để trống.");
 
             if (!ModelState.IsValid)
             {
@@ -175,7 +174,6 @@ namespace LearnEDU.Controllers
             student.DateRegister = DateTime.Now;
             student.CurrentBalance = 100;
             student.Role = "Student";
-            student.InstructorName = InstructorName; // Assign the instructor name
 
             if (ImageFile != null && ImageFile.Length > 0)
             {

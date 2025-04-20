@@ -75,12 +75,12 @@
 
                 <div class="card-body">
                     <h5 class="card-title">@course.Name</h5>
-                    <p class="mb-1"><strong>Level:</strong> @course.Level</p>
-                    <p class="mb-1"><strong>Start:</strong> @course.StartDate.ToString("dd/MM/yyyy")</p>
-                    <p class="mb-1"><strong>Instructor:</strong> @course.InstructorName</p>
-                    <p class="mb-1"><strong>Category:</strong> @course.Category</p>
-                    <p class="mb-1"><strong>Price (nghìn VNĐ):</strong> @course.Price</p>
-                    <p class="mb-1"><strong>Current size:</strong> @course.CurrentSize / @course.Capacity</p>
+                    <p class="mb-1"><strong>Cấp độ:</strong> @course.Level</p>
+                    <p class="mb-1"><strong>Ngày bắt đầu:</strong> @course.StartDate.ToString("dd/MM/yyyy")</p>
+                    <p class="mb-1"><strong>Giảng viên:</strong> @course.InstructorName</p>
+                    <p class="mb-1"><strong>Danh mục:</strong> @course.Category</p>
+                    <p class="mb-1"><strong>Giá (nghìn VNĐ):</strong> @course.Price</p>
+                    <p class="mb-1"><strong>Số lượng hiện tại:</strong> @course.CurrentSize / @course.Capacity</p>
                 </div>
 
                 <div class="card-footer bg-transparent text-center">
@@ -97,7 +97,7 @@
                     }
                     else
                     {
-                        <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-info btn-sm">
+                        <a href="@Url.Action("Details", "Course", new { id = course.Id })" class="btn btn-dark btn-sm">
                             Chi tiết
                         </a>
                     }
