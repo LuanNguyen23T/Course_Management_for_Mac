@@ -334,6 +334,25 @@ namespace LearnEDU.Controllers
             existingStudent.Education = student.Education;
             existingStudent.CurrentBalance = student.CurrentBalance;
             //existingStudent.Role = ViewBag.Role;
+
+            // ✅ Cập nhật quyền nếu là Admin
+            if (role == "Admin" && !string.IsNullOrEmpty(student.Role))
+            {
+                // Nếu Admin tự set mình thành Student
+                if (student.Role == "Student")
+                {
+                    existingStudent.Role = "Student";
+                    _context.Students.Update(existingStudent);
+                    _context.SaveChanges();
+
+                    // Xóa session và chuyển hướng đến trang đăng nhập
+                    HttpContext.Session.Clear();
+                    return RedirectToAction("Login", "Account");
+                }
+
+                existingStudent.Role = student.Role;
+            }
+
             if (ImageFile == null)
             {
                 Console.WriteLine("❌ Không nhận được file từ form!");

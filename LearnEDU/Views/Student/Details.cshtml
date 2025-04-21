@@ -87,6 +87,15 @@ else{
                 <input asp-for="CurrentBalance" class="form-control" />
                 <span asp-validation-for="CurrentBalance" class="text-danger"></span>
             </div>
+
+                <div class="col-md-6">
+                    <label asp-for="Role">Vai trò</label>
+                    <select asp-for="Role" class="form-control">
+                        <option value="Student" selected="@(Model.Role == "Student")">Học viên</option>
+                        <option value="Admin" selected="@(Model.Role == "Admin")">Admin</option>
+                    </select>
+                </div>
+
         }
         <div class="col-md-6">
             <label>Thay ảnh đại diện (nếu muốn)</label>
