@@ -391,7 +391,7 @@ namespace LearnEDU.Controllers
             _context.Courses.Update(existing);
             _context.SaveChanges();
 
-            if (ViewBag.Role == "Admin")
+            if (role == "Admin")
                 return RedirectToAction("Index", "Dashboard");
             else
                 return RedirectToAction("Index", "StudentHome");
