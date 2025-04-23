@@ -59,3 +59,47 @@
         }
     </ul>
 </div>
+
+
+<!-- Biểu đồ doanh thu -->
+<div class="mb-4">
+    <h5>Biểu đồ doanh thu từng khóa học</h5>
+    <canvas id="revenueChart" width="400" height="200"></canvas>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Lấy dữ liệu từ ViewBag
+        const courseNames = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(
+            ((IEnumerable<dynamic>)ViewBag.RevenueByCourse).Select(c => c.CourseName)
+        ));
+        const revenues = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(
+            ((IEnumerable<dynamic>)ViewBag.RevenueByCourse).Select(c => c.Revenue)
+        ));
+
+        // Vẽ biểu đồ
+        const ctx = document.getElementById('revenueChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: courseNames,
+                datasets: [{
+                    label: 'Doanh thu (nghìn VNĐ)',
+                    data: revenues,
+                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+}
