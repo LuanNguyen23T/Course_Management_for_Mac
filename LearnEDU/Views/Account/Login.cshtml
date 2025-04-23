@@ -22,14 +22,14 @@
             }
 
             <form asp-action="Login" method="post">
-                <div class="mb-3">
-                    <label class="form-label">Tên tài khoản</label>
-                    <input name="username" class="form-control rounded-pill" required />
+                <div class="mb-4">
+                    <label class="form-label fw-bold">Tên đăng nhập</label>
+                    <input name="username" class="form-control" style="height: 50px; background-color: #f5f5f5;" required />
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label">Mật khẩu</label>
-                    <input name="password" type="password" class="form-control rounded-pill" required />
+                <div class="mb-4">
+                    <label class="form-label fw-bold">Mật khẩu</label>
+                    <input name="password" type="password" class="form-control" style="height: 50px; background-color: #f5f5f5;" required />
                 </div>
 
                 <button type="submit" class="btn btn-primary w-100 rounded-pill">Đăng nhập</button>

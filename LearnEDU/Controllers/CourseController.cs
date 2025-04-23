@@ -41,7 +41,6 @@ namespace LearnEDU.Controllers
             string level,
             string category,
             string priceRange,
-            bool onlyUpcoming = false,
             int? page = 1)
         {
             var role = HttpContext.Session.GetString("Role");
@@ -84,14 +83,11 @@ namespace LearnEDU.Controllers
                 }
             }
 
-            if (onlyUpcoming)
-                courses = courses.Where(c => c.StartDate > DateTime.Now);
-
             // ✅ Mặc định sắp xếp theo StartDate
             courses = courses.OrderBy(c => c.StartDate);
 
             // 📄 Phân trang
-            int pageSize = 9;
+            int pageSize = 6; 
             int pageNumber = page ?? 1;
 
             // 🧾 Gán lại dropdown list
@@ -105,8 +101,6 @@ namespace LearnEDU.Controllers
             ViewBag.SelectedLevel = level;
             ViewBag.SelectedCategory = category;
             ViewBag.SelectedPriceRange = priceRange;
-            ViewBag.OnlyUpcoming = onlyUpcoming.ToString().ToLower();
-
             return View(courses.ToPagedList(pageNumber, pageSize));
         }
 
@@ -142,11 +136,6 @@ namespace LearnEDU.Controllers
             ViewBag.IsEnrolled = isEnrolled;
 
             return View(course);
-        }
-
-        private List<string> GetLevelList()
-        {
-            return new List<string> { "Beginner", "Intermediate", "Advanced" };
         }
 
         [HttpGet]
@@ -563,18 +552,14 @@ namespace LearnEDU.Controllers
             return View("All", courseQuery.ToPagedList(pageNumber, pageSize));
         }
 
-
-
-
-        // private List<string> GetInstructorList()
-        // {
-        //     return new List<string>
-        //     {
-        //         "Võ Đức Hoàng",
-        //         "Nguyễn Thị Lệ Quyên",
-        //         "Sun*"
-        //     };
-        // }
+        private List<string> GetLevelList()
+        {
+            return new List<string> { 
+                "Cơ bản", 
+                "Trung cấp", 
+                "Cao cấp" 
+            };
+        }
 
         private List<string> GetCategoryList()
         {

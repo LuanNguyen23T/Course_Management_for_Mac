@@ -21,13 +21,13 @@ else{
     <div class="row">
         @if (ViewBag.Role == "Admin")
         {
-            <div class="col-md-6">
-                <label asp-for="Username">Tên đăng nhập</label>
+            <div class="col-md-6 mb-3">
+                <label asp-for="Username" style="font-weight: bold;">Tên đăng nhập</label>
                 <input asp-for="Username" class="form-control" />
             </div>
 
-            <div class="col-md-6">
-                <label>Mật khẩu</label>
+            <div class="col-md-6 mb-3">
+                <label style="font-weight: bold;">Mật khẩu</label>
                 <input type="password" name="Password" class="form-control" value="@Model.Password" />
                 <span class="text-muted small">Mật khẩu hiện tại sẽ được giữ nguyên nếu không thay đổi</span>
             </div>
@@ -37,38 +37,38 @@ else{
             <input type="hidden" asp-for="Username" />
             <input type="hidden" asp-for="Password" />
         }
-        <div class="col-md-6">
-            <label asp-for="FirstName">Họ lót</label>
+        <div class="col-md-6 mb-3">
+            <label asp-for="FirstName" style="font-weight: bold;">Họ lót</label>
             <input asp-for="FirstName" class="form-control" />
         </div>
-        <div class="col-md-6">
-            <label asp-for="LastName">Tên</label>
+        <div class="col-md-6 mb-3">
+            <label asp-for="LastName" style="font-weight: bold;">Tên</label>
             <input asp-for="LastName" class="form-control" />
         </div>
 
-        <div class="col-md-6">
-            <label asp-for="Email">Email</label>
+        <div class="col-md-6 mb-3">
+            <label asp-for="Email" style="font-weight: bold;">Email</label>
             <input asp-for="Email" class="form-control" />
             <span asp-validation-for="Email" class="text-danger"></span>
         </div>
 
-        <div class="col-md-6">
-            <label asp-for="Phone">Số điện thoại</label>
+        <div class="col-md-6 mb-3">
+            <label asp-for="Phone" style="font-weight: bold;">Số điện thoại</label>
             <input asp-for="Phone" class="form-control" />
         </div>
 
-        <div class="col-md-6">
-            <label asp-for="Address">Địa chỉ</label>
+        <div class="col-md-6 mb-3">
+            <label asp-for="Address" style="font-weight: bold;">Địa chỉ</label>
             <input asp-for="Address" class="form-control" />
         </div>
 
-        <div class="col-md-6">
-            <label asp-for="DateOfBirth">Ngày sinh</label>
+        <div class="col-md-6 mb-3">
+            <label asp-for="DateOfBirth" style="font-weight: bold;">Ngày sinh</label>
             <input asp-for="DateOfBirth" type="date" class="form-control" />
         </div>
 
-        <div class="col-md-6">
-            <label asp-for="Gender">Giới tính</label>
+        <div class="col-md-6 mb-3">
+            <label asp-for="Gender" style="font-weight: bold;">Giới tính</label>
             <select asp-for="Gender" class="form-control">
                 <option value="">-- Chọn giới tính --</option>
                 <option>Nam</option>
@@ -76,36 +76,35 @@ else{
             </select>
         </div>
 
-        <div class="col-md-6">
-            <label asp-for="Education">Trường học</label>
+        <div class="col-md-6 mb-3">
+            <label asp-for="Education" style="font-weight: bold;">Trường học</label>
             <input asp-for="Education" class="form-control" />
         </div>
         @if (ViewBag.Role == "Admin")
         {
-            <div class="mb-3">
-                <label for="CurrentBalance" class="form-label">Số dư (VNĐ)</label>
+            <div class="col-md-6 mb-3">
+                <label for="CurrentBalance" class="form-label" style="font-weight: bold;">Số dư (VNĐ)</label>
                 <input asp-for="CurrentBalance" class="form-control" />
                 <span asp-validation-for="CurrentBalance" class="text-danger"></span>
             </div>
 
-                <div class="col-md-6">
-                    <label asp-for="Role">Vai trò</label>
-                    <select asp-for="Role" class="form-control">
-                        <option value="Student" selected="@(Model.Role == "Student")">Học viên</option>
-                        <option value="Admin" selected="@(Model.Role == "Admin")">Admin</option>
-                    </select>
-                </div>
-
+            <div class="col-md-6 mb-3">
+                <label asp-for="Role" style="font-weight: bold;">Vai trò</label>
+                <select asp-for="Role" class="form-control">
+                    <option value="Student" selected="@(Model.Role == "Student")">Học viên</option>
+                    <option value="Admin" selected="@(Model.Role == "Admin")">Admin</option>
+                </select>
+            </div>
         }
-        <div class="col-md-6">
-            <label>Thay ảnh đại diện (nếu muốn)</label>
+        <div class="col-md-6 mb-3">
+            <label style="font-weight: bold;">Thay ảnh đại diện (nếu muốn)</label>
             <input type="file" name="ImageFile" class="form-control" />
         </div>
 
         @if (!string.IsNullOrEmpty(Model.Image))
         {
             <div class="col-md-6 mt-2">
-                <label>Ảnh hiện tại:</label><br />
+                <label style="font-weight: bold;">Ảnh hiện tại:</label><br />
                 <img src="@Model.Image" width="120" height="120" class="rounded" />
             </div>
         }

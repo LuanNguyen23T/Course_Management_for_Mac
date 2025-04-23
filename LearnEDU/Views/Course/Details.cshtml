@@ -4,6 +4,21 @@
     ViewData["Title"] = "Chi tiết khóa học";
 }
 
+<!-- Hiển thị thông báo -->
+@if (TempData["EnrollSuccess"] != null)
+{
+    <div class="alert alert-success text-center">
+        @TempData["EnrollSuccess"]
+    </div>
+}
+
+@if (TempData["EnrollError"] != null)
+{
+    <div class="alert alert-danger text-center">
+        @TempData["EnrollError"]
+    </div>
+}
+
 <h2 class="mb-4 d-flex justify-content-between align-items-center">
     <span>Chi tiết khóa học</span>
     @if (ViewBag.Role == "Admin")
@@ -45,39 +60,31 @@
                 }
             </div>
         </div>
+    </div>
 
-        <div class="mt-4 d-flex justify-content-center">
-            <a href="@Url.Action("EnrolledStudents", "Course", new { id = Model.Id })"
-            class="btn btn-outline-dark p-3">
-                Xem học sinh đã đăng ký
-            </a>
-        </div>  
+    <!-- Nút hành động -->
+    <div class="card-footer bg-light d-flex justify-content-between align-items-center">
+        <a href="@Url.Action("EnrolledStudents", "Course", new { id = Model.Id })" class="btn btn-outline-dark">
+            <i class="bi bi-people"></i> Xem học sinh đã đăng ký
+        </a>
 
         @if (ViewBag.Role == "Student")
         {
-            <div class="mt-4 d-flex gap-2">
-                @if (ViewBag.IsEnrolled == true)
-                {
-                    <form method="post" asp-action="Unenroll" asp-route-id="@Model.Id" class="d-inline">
-                        <button type="submit" class="btn btn-danger">Huỷ đăng kí</button>
-                    </form>
-                }
-                else
-                {
-                    <form method="post" asp-action="Enroll" asp-route-id="@Model.Id" class="d-inline">
-                        <button type="submit" class="btn btn-success">Đăng kí</button>
-                    </form>
-                }
-            </div>
-
-            @if (TempData["EnrollError"] != null)
+            @if (ViewBag.IsEnrolled == true)
             {
-                <div class="alert alert-danger mt-3">@TempData["EnrollError"]</div>
+                <form method="post" asp-action="Unenroll" asp-route-id="@Model.Id" class="d-inline">
+                    <button type="submit" class="btn btn-danger">
+                        <i class="bi bi-x-circle"></i> Huỷ đăng ký
+                    </button>
+                </form>
             }
-
-            @if (TempData["EnrollSuccess"] != null)
+            else
             {
-                <div class="alert alert-success mt-3">@TempData["EnrollSuccess"]</div>
+                <form method="post" asp-action="Enroll" asp-route-id="@Model.Id" class="d-inline">
+                    <button type="submit" class="btn btn-success">
+                        <i class="bi bi-check-circle"></i> Đăng ký
+                    </button>
+                </form>
             }
         }
     </div>

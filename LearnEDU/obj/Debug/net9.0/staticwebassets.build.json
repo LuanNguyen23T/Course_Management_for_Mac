@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kwPYuyNfJmeaHUv0fs+nTlGeDK5+l/3I0w63dfPZekQ=",
+  "Hash": "k+q5XgfrInpWdrEoy8ZimAA+jO7ZO7fbI8RbQxEmbUA=",
   "Source": "LearnEDU",
   "BasePath": "_content/LearnEDU",
   "Mode": "Default",
@@ -1550,6 +1550,48 @@
       "OriginalItemSpec": "wwwroot/images/072de711-ce41-44e2-af85-efee4a9d4f75.jpeg"
     },
     {
+      "Identity": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/0b2882de-4ff6-4690-a0fb-cadf3f145bf1.jpeg",
+      "SourceId": "LearnEDU",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/",
+      "BasePath": "_content/LearnEDU",
+      "RelativePath": "images/0b2882de-4ff6-4690-a0fb-cadf3f145bf1#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "58s2ny6p15",
+      "Integrity": "ZdqcTGEhE34Bd0GXEp5MvzE/mx3FJ21zH+5CT6l/dYA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/0b2882de-4ff6-4690-a0fb-cadf3f145bf1.jpeg"
+    },
+    {
+      "Identity": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/3e8f9715-2933-4e40-a39d-546ebf4c0d23.jpeg",
+      "SourceId": "LearnEDU",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/",
+      "BasePath": "_content/LearnEDU",
+      "RelativePath": "images/3e8f9715-2933-4e40-a39d-546ebf4c0d23#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rpn3y24qh2",
+      "Integrity": "zwQXP57Tz2oX9Cn5hh5dCl5hTsfcCAp68Ck4WJo229g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/3e8f9715-2933-4e40-a39d-546ebf4c0d23.jpeg"
+    },
+    {
       "Identity": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/61083383-a999-447b-9910-5789442093c8.png",
       "SourceId": "LearnEDU",
       "SourceType": "Discovered",
@@ -1569,6 +1611,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/61083383-a999-447b-9910-5789442093c8.png"
+    },
+    {
+      "Identity": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/8eb8db36-1abd-4656-8580-a62e10c8e75a.png",
+      "SourceId": "LearnEDU",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/",
+      "BasePath": "_content/LearnEDU",
+      "RelativePath": "images/8eb8db36-1abd-4656-8580-a62e10c8e75a#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gnmmpkozoy",
+      "Integrity": "LOWBpoZdVucjEvaEprAq+oSVovSF1iKjyb9PPbgX71U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/8eb8db36-1abd-4656-8580-a62e10c8e75a.png"
+    },
+    {
+      "Identity": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/a4bdc622-e0db-4e64-94e8-c4c6e707722c.jpeg",
+      "SourceId": "LearnEDU",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/",
+      "BasePath": "_content/LearnEDU",
+      "RelativePath": "images/a4bdc622-e0db-4e64-94e8-c4c6e707722c#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "53ip09rc96",
+      "Integrity": "0Zv0EZ7ZftsQYA7YqpDqoGIQDmUMXjb5NhBqOfaHydA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/a4bdc622-e0db-4e64-94e8-c4c6e707722c.jpeg"
     },
     {
       "Identity": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/dc5fdb39-c9c0-466d-856a-35b49ac3781c.png",
@@ -4170,6 +4254,170 @@
       ]
     },
     {
+      "Route": "images/0b2882de-4ff6-4690-a0fb-cadf3f145bf1.58s2ny6p15.jpeg",
+      "AssetFile": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/0b2882de-4ff6-4690-a0fb-cadf3f145bf1.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "143224"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZdqcTGEhE34Bd0GXEp5MvzE/mx3FJ21zH+5CT6l/dYA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Apr 2025 06:12:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "58s2ny6p15"
+        },
+        {
+          "Name": "label",
+          "Value": "images/0b2882de-4ff6-4690-a0fb-cadf3f145bf1.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZdqcTGEhE34Bd0GXEp5MvzE/mx3FJ21zH+5CT6l/dYA="
+        }
+      ]
+    },
+    {
+      "Route": "images/0b2882de-4ff6-4690-a0fb-cadf3f145bf1.jpeg",
+      "AssetFile": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/0b2882de-4ff6-4690-a0fb-cadf3f145bf1.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "143224"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZdqcTGEhE34Bd0GXEp5MvzE/mx3FJ21zH+5CT6l/dYA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Apr 2025 06:12:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZdqcTGEhE34Bd0GXEp5MvzE/mx3FJ21zH+5CT6l/dYA="
+        }
+      ]
+    },
+    {
+      "Route": "images/3e8f9715-2933-4e40-a39d-546ebf4c0d23.jpeg",
+      "AssetFile": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/3e8f9715-2933-4e40-a39d-546ebf4c0d23.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "82865"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zwQXP57Tz2oX9Cn5hh5dCl5hTsfcCAp68Ck4WJo229g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Apr 2025 06:15:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zwQXP57Tz2oX9Cn5hh5dCl5hTsfcCAp68Ck4WJo229g="
+        }
+      ]
+    },
+    {
+      "Route": "images/3e8f9715-2933-4e40-a39d-546ebf4c0d23.rpn3y24qh2.jpeg",
+      "AssetFile": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/3e8f9715-2933-4e40-a39d-546ebf4c0d23.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "82865"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zwQXP57Tz2oX9Cn5hh5dCl5hTsfcCAp68Ck4WJo229g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Apr 2025 06:15:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rpn3y24qh2"
+        },
+        {
+          "Name": "label",
+          "Value": "images/3e8f9715-2933-4e40-a39d-546ebf4c0d23.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zwQXP57Tz2oX9Cn5hh5dCl5hTsfcCAp68Ck4WJo229g="
+        }
+      ]
+    },
+    {
       "Route": "images/61083383-a999-447b-9910-5789442093c8.m97zzj0s4m.png",
       "AssetFile": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/61083383-a999-447b-9910-5789442093c8.png",
       "Selectors": [],
@@ -4248,6 +4496,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-ij7fSb1vuX8YkDZSKiLwRGqKdGisxKg3eP5A2VzzAY8="
+        }
+      ]
+    },
+    {
+      "Route": "images/8eb8db36-1abd-4656-8580-a62e10c8e75a.gnmmpkozoy.png",
+      "AssetFile": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/8eb8db36-1abd-4656-8580-a62e10c8e75a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "437847"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LOWBpoZdVucjEvaEprAq+oSVovSF1iKjyb9PPbgX71U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Apr 2025 06:09:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gnmmpkozoy"
+        },
+        {
+          "Name": "label",
+          "Value": "images/8eb8db36-1abd-4656-8580-a62e10c8e75a.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LOWBpoZdVucjEvaEprAq+oSVovSF1iKjyb9PPbgX71U="
+        }
+      ]
+    },
+    {
+      "Route": "images/8eb8db36-1abd-4656-8580-a62e10c8e75a.png",
+      "AssetFile": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/8eb8db36-1abd-4656-8580-a62e10c8e75a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "437847"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LOWBpoZdVucjEvaEprAq+oSVovSF1iKjyb9PPbgX71U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Apr 2025 06:09:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LOWBpoZdVucjEvaEprAq+oSVovSF1iKjyb9PPbgX71U="
+        }
+      ]
+    },
+    {
+      "Route": "images/a4bdc622-e0db-4e64-94e8-c4c6e707722c.53ip09rc96.jpeg",
+      "AssetFile": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/a4bdc622-e0db-4e64-94e8-c4c6e707722c.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0Zv0EZ7ZftsQYA7YqpDqoGIQDmUMXjb5NhBqOfaHydA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Apr 2025 06:18:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "53ip09rc96"
+        },
+        {
+          "Name": "label",
+          "Value": "images/a4bdc622-e0db-4e64-94e8-c4c6e707722c.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0Zv0EZ7ZftsQYA7YqpDqoGIQDmUMXjb5NhBqOfaHydA="
+        }
+      ]
+    },
+    {
+      "Route": "images/a4bdc622-e0db-4e64-94e8-c4c6e707722c.jpeg",
+      "AssetFile": "/Users/Nguyen Huu Hoang Luan/Git Code/Course_Management_for_Mac/LearnEDU/wwwroot/images/a4bdc622-e0db-4e64-94e8-c4c6e707722c.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0Zv0EZ7ZftsQYA7YqpDqoGIQDmUMXjb5NhBqOfaHydA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Apr 2025 06:18:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0Zv0EZ7ZftsQYA7YqpDqoGIQDmUMXjb5NhBqOfaHydA="
         }
       ]
     },
