@@ -41,7 +41,6 @@ namespace LearnEDU.Controllers
             string level,
             string category,
             string priceRange,
-            bool onlyStarted = false,
             int? page = 1)
         {
             var role = HttpContext.Session.GetString("Role");
@@ -61,7 +60,8 @@ namespace LearnEDU.Controllers
                 courses = courses.Where(c => c.StartDate >= startDate.Value);
 
             if (!string.IsNullOrEmpty(instructor))
-                courses = courses.Where(c => c.InstructorName.ToLower().Contains(instructor.ToLower())); 
+                courses = courses.Where(c => c.InstructorName.ToLower().Contains(instructor.ToLower()));
+
             if (!string.IsNullOrEmpty(level))
                 courses = courses.Where(c => c.Level == level);
 
@@ -76,25 +76,19 @@ namespace LearnEDU.Controllers
                         courses = courses.Where(c => c.Price < 500);
                         break;
                     case "500to1000":
-                        courses = courses.Where(c => c.Price >= 500 && c.Price <= 1000);
+                        courses = courses.Where(c => c.Price >= 500 && c.Price <= 1000); // Đảm bảo logic đúng
                         break;
                     case "gt1000":
                         courses = courses.Where(c => c.Price > 1000);
                         break;
                 }
             }
-            
-            // Lọc khóa học đã bắt đầu
-            if (onlyStarted)
-            {
-                courses = courses.Where(c => c.StartDate <= DateTime.Now);
-            }
 
             // ✅ Mặc định sắp xếp theo StartDate
             courses = courses.OrderBy(c => c.StartDate);
 
             // 📄 Phân trang
-            int pageSize = 6; 
+            int pageSize = 6;
             int pageNumber = page ?? 1;
 
             // 🧾 Gán lại dropdown list
@@ -108,6 +102,7 @@ namespace LearnEDU.Controllers
             ViewBag.SelectedLevel = level;
             ViewBag.SelectedCategory = category;
             ViewBag.SelectedPriceRange = priceRange;
+
             return View(courses.ToPagedList(pageNumber, pageSize));
         }
 

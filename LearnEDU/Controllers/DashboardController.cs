@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using LearnEDU.Data;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 public class DashboardController : Controller
@@ -12,76 +13,71 @@ public class DashboardController : Controller
         _context = context;
     }
 
-    // public IActionResult Index(DateTime? fromDate, DateTime? toDate)
-    // {
-    //     var role = HttpContext.Session.GetString("Role");
-    //     if (role != "Admin")
-    //     {
-    //         return RedirectToAction("AccessDenied", "Account"); // hoặc về trang Home
-    //     }
-    //     fromDate ??= DateTime.Today.AddDays(-7);
-    //     toDate ??= DateTime.Today;
-    //     toDate = toDate.Value.AddDays(1).AddTicks(-1); // 2025-04-19 23:59:59.9999999
-
-    //     ViewBag.FromDate = fromDate.Value.ToString("yyyy-MM-dd");
-    //     ViewBag.ToDate = toDate.Value.ToString("yyyy-MM-dd");
-
-    //     // Tổng học sinh, tổng khóa học
-    //     ViewBag.TotalStudents = _context.Students.Count(s => s.Role == "Student");
-    //     ViewBag.TotalCourses = _context.Courses.Count();
-
-    //     // Doanh thu từng khóa học trong khoảng thời gian
-    //     var revenueByCourse = _context.Enrollments
-    //         .Where(e => e.EnrollDate >= fromDate && e.EnrollDate <= toDate)
-    //         .GroupBy(e => e.Course.Name)
-    //         .Select(g => new
-    //         {
-    //             CourseName = g.Key,
-    //             Revenue = g.Sum(e => e.Course.Price)
-    //         })
-    //         .OrderByDescending(x => x.Revenue)
-    //         .ToList();
-
-    //     ViewBag.RevenueByCourse = revenueByCourse;
-    //     var totalRevenue = _context.Enrollments
-    //         .Where(e => e.EnrollDate >= fromDate && e.EnrollDate <= toDate)
-    //         .Sum(e => e.Course.Price);
-    //     ViewBag.TotalRevenue = totalRevenue;
-
-    //     return View();
-    // }
-
     public IActionResult Index(DateTime? fromDate, DateTime? toDate)
-{
-    var role = HttpContext.Session.GetString("Role");
-    if (role != "Admin")
     {
-        return RedirectToAction("AccessDenied", "Account");
-    }
-    fromDate ??= DateTime.Today.AddDays(-7);
-    toDate ??= DateTime.Today;
-    toDate = toDate.Value.AddDays(1).AddTicks(-1);
-
-    ViewBag.FromDate = fromDate.Value.ToString("yyyy-MM-dd");
-    ViewBag.ToDate = toDate.Value.ToString("yyyy-MM-dd");
-
-    ViewBag.TotalStudents = _context.Students.Count(s => s.Role == "Student");
-    ViewBag.TotalCourses = _context.Courses.Count();
-
-    var revenueByCourse = _context.Enrollments
-        .Where(e => e.EnrollDate >= fromDate && e.EnrollDate <= toDate)
-        .GroupBy(e => e.Course.Name)
-        .Select(g => new
+        var role = HttpContext.Session.GetString("Role");
+        if (role != "Admin")
         {
-            CourseName = g.Key,
-            Revenue = g.Sum(e => e.Course.Price)
-        })
-        .OrderByDescending(x => x.Revenue)
-        .ToList();
+            return RedirectToAction("AccessDenied", "Account");
+        }
 
-    ViewBag.RevenueByCourse = revenueByCourse;
-    ViewBag.TotalRevenue = revenueByCourse.Sum(x => x.Revenue);
+        // Xác định khoảng thời gian
+        fromDate ??= DateTime.Today.AddDays(-7);
+        toDate ??= DateTime.Today;
+        toDate = toDate.Value.AddDays(1).AddTicks(-1); // Đặt đến cuối ngày
 
-    return View();
-}
+        ViewBag.FromDate = fromDate.Value.ToString("yyyy-MM-dd");
+        ViewBag.ToDate = toDate.Value.ToString("yyyy-MM-dd");
+
+        // Tổng số học sinh và khóa học
+        ViewBag.TotalStudents = _context.Students.Count(s => s.Role == "Student");
+        ViewBag.TotalCourses = _context.Courses.Count();
+
+        // Tạo danh sách tất cả các ngày trong khoảng thời gian
+        var allDates = Enumerable.Range(0, (toDate.Value - fromDate.Value).Days + 1)
+            .Select(offset => fromDate.Value.AddDays(offset).Date)
+            .ToList();
+
+        // Doanh thu từng khóa học theo ngày
+        var revenueByCourse = _context.Enrollments
+            .Where(e => e.EnrollDate >= fromDate && e.EnrollDate <= toDate)
+            .GroupBy(e => new { e.Course.Name, Date = e.EnrollDate.Date })
+            .Select(g => new
+            {
+                g.Key.Name,
+                g.Key.Date,
+                DailyRevenue = g.Sum(e => e.Course.Price)
+            })
+            .ToList();
+
+        // Chuyển đổi dữ liệu để phù hợp với biểu đồ
+        var groupedData = revenueByCourse
+            .GroupBy(r => r.Name)
+            .Select(g =>
+            {
+                // Tạo danh sách doanh thu đầy đủ cho tất cả các ngày
+                var dailyRevenueByDate = allDates
+                    .Select(date => new
+                    {
+                        Date = date.ToString("yyyy-MM-dd"),
+                        Revenue = g.FirstOrDefault(x => x.Date == date)?.DailyRevenue ?? 0
+                    })
+                    .ToList();
+
+                return new
+                {
+                    CourseName = g.Key,
+                    Dates = dailyRevenueByDate.Select(x => x.Date).ToList(),
+                    DailyRevenue = dailyRevenueByDate.Select(x => x.Revenue).ToList()
+                };
+            })
+            .ToList();
+
+        ViewBag.RevenueByCourse = groupedData;
+
+        // Tổng doanh thu
+        ViewBag.TotalRevenue = revenueByCourse.Sum(x => x.DailyRevenue);
+
+        return View();
+    }
 }

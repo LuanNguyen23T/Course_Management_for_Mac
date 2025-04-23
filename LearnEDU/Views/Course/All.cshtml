@@ -53,16 +53,9 @@
             <select name="priceRange" class="form-select">
                 <option value="">-- Khoảng giá --</option>
                 <option value="lt500" selected="@(ViewBag.SelectedPriceRange == "lt500")">Dưới 500</option>
-                <option value="500-1000" selected="@(ViewBag.SelectedPriceRange == "500-1000")">500 - 1000</option>
+                <option value="500to1000" selected="@(ViewBag.SelectedPriceRange == "500to1000")">500 - 1000</option>
                 <option value="gt1000" selected="@(ViewBag.SelectedPriceRange == "gt1000")">Trên 1000</option>
             </select>
-        </div>
-        <div class="col-md-3 d-flex align-items-center">
-            <div class="form-check">
-                <input type="hidden" name="onlyStarted" value="false" />
-                <input type="checkbox" name="onlyStarted" class="form-check-input" id="onlyStarted" value="true" @(ViewBag.OnlyStarted == true ? "checked" : "") />
-                <label class="form-check-label" for="onlyStarted">Chỉ khóa học đã bắt đầu</label>
-            </div>
         </div>
         <div class="col-md-3 d-flex">
             <button type="submit" class="btn btn-dark w-100 me-2">Tìm kiếm</button>
@@ -88,7 +81,7 @@
                     <p class="mb-1"><strong>Ngày bắt đầu:</strong> @course.StartDate.ToString("dd/MM/yyyy")</p>
                     <p class="mb-1"><strong>Giảng viên:</strong> @course.InstructorName</p>
                     <p class="mb-1"><strong>Danh mục:</strong> @course.Category</p>
-                    <p class="mb-1"><strong>Giá (nghìn VNĐ):</strong> @course.Price</p>
+                    <p class="mb-1"><strong>Giá ($):</strong> @course.Price</p>
                     <p class="mb-1"><strong>Số lượng hiện tại:</strong> @course.CurrentSize / @course.Capacity</p>
                 </div>
 
@@ -134,7 +127,6 @@
             level = ViewBag.SelectedLevel,
             category = ViewBag.SelectedCategory,
             priceRange = ViewBag.SelectedPriceRange,
-            onlyUpcoming = ViewBag.OnlyUpcoming
         }),
             new PagedListRenderOptions
     {

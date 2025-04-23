@@ -318,6 +318,14 @@ namespace LearnEDU.Controllers
                 return NotFound();
             }
 
+            // Kiểm tra trùng tên đăng nhập
+            bool usernameExists = _context.Students.Any(s => s.Username == student.Username && s.Id != student.Id);
+            if (usernameExists)
+            {
+                ModelState.AddModelError("Username", "Tên đăng nhập đã được sử dụng bởi học sinh khác.");
+                return View(student);
+            }
+
             bool emailExists = _context.Students.Any(s => s.Email == student.Email && s.Id != student.Id);
             if (emailExists)
             {

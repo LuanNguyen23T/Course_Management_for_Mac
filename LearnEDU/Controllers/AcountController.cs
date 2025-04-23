@@ -26,7 +26,9 @@ namespace LearnEDU.Controllers
             student.Role = "Student";
             student.DateRegister = DateTime.Now;
             student.CurrentBalance = 0;
-            if (_context.Students.Any(s => s.Username == student.Username))
+            
+            // Sử dụng AsEnumerable() để thực thi truy vấn ngay lập tức
+            if (_context.Students.AsEnumerable().Any(s => s.Username == student.Username))
             {
                 ModelState.AddModelError("Username", "Tên đăng nhập đã tồn tại.");
                 return View(student);
@@ -74,7 +76,7 @@ namespace LearnEDU.Controllers
         [HttpPost]
         public IActionResult Login(string username, string password)
         {
-            var user = _context.Students.FirstOrDefault(s => s.Username == username && s.Password == password);
+            var user = _context.Students.AsEnumerable().FirstOrDefault(s => s.Username == username && s.Password == password);
 
             if (user != null)
             {

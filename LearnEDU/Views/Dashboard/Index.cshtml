@@ -42,24 +42,10 @@
     <div class="card bg-dark text-white shadow"> <!-- Đổi màu box thành đen -->
         <div class="card-body">
             <h5 class="card-title">Tổng doanh thu trong khoảng thời gian</h5>
-            <p class="display-6">@ViewBag.TotalRevenue</p>
+            <p class="display-6">@ViewBag.TotalRevenue $</p>
         </div>
     </div>
 </div>
-<!-- Doanh thu theo từng khóa học -->
-<div class="mb-4">
-    <h5> Doanh thu từng khóa học trong khoảng thời gian đã chọn</h5>
-    <ul class="list-group">
-        @foreach (var item in ViewBag.RevenueByCourse)
-        {
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                @item.CourseName
-                <span class="badge bg-dark rounded-pill">@item.Revenue nghìn VNĐ</span>
-            </li>
-        }
-    </ul>
-</div>
-
 
 <!-- Biểu đồ doanh thu -->
 <div class="mb-4">
@@ -74,28 +60,52 @@
         const courseNames = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(
             ((IEnumerable<dynamic>)ViewBag.RevenueByCourse).Select(c => c.CourseName)
         ));
-        const revenues = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(
-            ((IEnumerable<dynamic>)ViewBag.RevenueByCourse).Select(c => c.Revenue)
+        const revenueData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(
+            ((IEnumerable<dynamic>)ViewBag.RevenueByCourse).Select(c => c.DailyRevenue)
+        ));
+        const labels = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(
+            ((IEnumerable<dynamic>)ViewBag.RevenueByCourse).Select(c => c.Dates)
         ));
 
         // Vẽ biểu đồ
         const ctx = document.getElementById('revenueChart').getContext('2d');
+        const datasets = courseNames.map((courseName, index) => ({
+            label: courseName,
+            data: revenueData[index],
+            fill: false,
+            borderColor: `rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, 1)`,
+            tension: 0.1
+        }));
+
         new Chart(ctx, {
-            type: 'bar',
+            type: 'line',
             data: {
-                labels: courseNames,
-                datasets: [{
-                    label: 'Doanh thu (nghìn VNĐ)',
-                    data: revenues,
-                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
-                    borderColor: 'rgba(54, 162, 235, 1)',
-                    borderWidth: 1
-                }]
+                labels: labels[0], // Cột X là ngày
+                datasets: datasets
             },
             options: {
                 responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Doanh thu từng khóa học theo ngày'
+                    }
+                },
                 scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Ngày'
+                        }
+                    },
                     y: {
+                        title: {
+                            display: true,
+                            text: 'Doanh thu ($)'
+                        },
                         beginAtZero: true
                     }
                 }

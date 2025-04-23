@@ -18,6 +18,8 @@ else{
 <form asp-action="Details" method="post" enctype="multipart/form-data">
     <input type="hidden" asp-for="Id" />
 
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div> <!-- Hiển thị lỗi không có thẻ ul -->
+
     <div class="row">
         @if (ViewBag.Role == "Admin")
         {
@@ -83,7 +85,7 @@ else{
         @if (ViewBag.Role == "Admin")
         {
             <div class="col-md-6 mb-3">
-                <label for="CurrentBalance" class="form-label" style="font-weight: bold;">Số dư (VNĐ)</label>
+                <label for="CurrentBalance" class="form-label" style="font-weight: bold;">Số dư ($)</label>
                 <input asp-for="CurrentBalance" class="form-control" />
                 <span asp-validation-for="CurrentBalance" class="text-danger"></span>
             </div>

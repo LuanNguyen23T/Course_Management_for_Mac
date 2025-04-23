@@ -1,8 +1,1 @@
 * khi thêm tk thì chặn tên đăng nhập nếu trùng
-
-
-
-Trạng thái khoá học (lọc đã bắt đầu?)
-
-hashpassword
-kiểm tra mật khẩu
