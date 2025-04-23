@@ -58,13 +58,15 @@ namespace LearnEDU.Controllers
                 return NotFound();
             }
 
+            // Không cho phép xóa Admin
+            if (student.Role == "Admin")
+            {
+                TempData["Error"] = "Không thể xóa tài khoản Admin.";
+                return RedirectToAction("AllUser", "Student");
+            }
+
             _context.Students.Remove(student);
             _context.SaveChanges();
-
-            // if (ViewBag.Role == "Admin")
-            //     return RedirectToAction("Index", "Dashboard");
-            // else
-            //     return RedirectToAction("Index", "StudentHome");
 
             if(role == "Admin")
             {
@@ -235,6 +237,9 @@ namespace LearnEDU.Controllers
             if (!string.IsNullOrEmpty(username))
                 students = students.Where(s => s.Username.ToLower().Contains(username.ToLower().Trim()));
 
+            // --- Sắp xếp mặc định theo tên (alphabet) ---
+            students = students.OrderBy(s => s.LastName).ThenBy(s => s.FirstName);
+
             // --- Paging ---
             int pageSize = 10;
             int pageNumber = page ?? 1;
@@ -267,6 +272,9 @@ namespace LearnEDU.Controllers
 
             if (!string.IsNullOrEmpty(role))
                 students = students.Where(s => s.Role == role);
+
+            // --- Sắp xếp mặc định theo Role ---
+             students = students.OrderBy(s => s.Role).ThenBy(s => s.Username);
 
             // Gán ViewBag giữ filter
             ViewBag.Username = username;
@@ -333,25 +341,8 @@ namespace LearnEDU.Controllers
             existingStudent.Gender = student.Gender;
             existingStudent.Education = student.Education;
             existingStudent.CurrentBalance = student.CurrentBalance;
-            //existingStudent.Role = ViewBag.Role;
+            existingStudent.Role = ViewBag.Role;
 
-            // ✅ Cập nhật quyền nếu là Admin
-            if (role == "Admin" && !string.IsNullOrEmpty(student.Role))
-            {
-                // Nếu Admin tự set mình thành Student
-                if (student.Role == "Student")
-                {
-                    existingStudent.Role = "Student";
-                    _context.Students.Update(existingStudent);
-                    _context.SaveChanges();
-
-                    // Xóa session và chuyển hướng đến trang đăng nhập
-                    HttpContext.Session.Clear();
-                    return RedirectToAction("Login", "Account");
-                }
-
-                existingStudent.Role = student.Role;
-            }
 
             if (ImageFile == null)
             {

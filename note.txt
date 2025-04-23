@@ -1,13 +1,8 @@
-Xem khoá học của học viên đã đăng kí
-Ko xoá đc admin nếu chỉ có 1 admin
-
 * khi thêm tk thì chặn tên đăng nhập nếu trùng
 
-tất cả tk thì sắp xếp theo role
 
-thêm warnign nếu đki quá nhìu khoá học
-
-thay đổi thong tin -> thoát về trang chủ
-chỉnh sửa thông tin khoá học, button lưu thay đổi -> dark
 
 Trạng thái khoá học (lọc đã bắt đầu?)
+
+hashpassword
+kiểm tra mật khẩu

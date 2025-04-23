@@ -7,26 +7,25 @@
 <h2 class="mb-4">Danh sách toàn bộ tài khoản</h2>
 
 <!-- 🔍 Filter Form -->
-<form method="get" class="row g-3 mb-4">
-    <div class="col-md-2">
+<form method="get" class="d-flex align-items-center gap-3 mb-4">
+    <div class="flex-grow-1">
         <input type="text" name="username" value="@ViewBag.Username" class="form-control" placeholder="Tên đăng nhập" />
     </div>
-    <div class="col-md-2">
+    <div class="flex-grow-1">
         <input type="email" name="email" value="@ViewBag.Email" class="form-control" placeholder="Email" />
     </div>
-    <div class="col-md-2">
+    <div class="flex-grow-1">
         <input type="text" name="phone" value="@ViewBag.Phone" class="form-control" placeholder="Số điện thoại" />
     </div>
-    <div class="col-md-2">
+    <div class="flex-grow-1">
         <select name="role" class="form-select">
-            <option value="">-- Role --</option>
+            <option value="">-- Vai trò --</option>
             <option value="Student" selected="@(ViewBag.RoleFilter == "Student")">Học viên</option>
             <option value="Admin" selected="@(ViewBag.RoleFilter == "Admin")">Admin</option>
         </select>
     </div>
-    <div class="col-md-2">
-        <button type="submit" class="btn btn-dark w-100">Lọc</button>
-    </div>
+    <button type="submit" class="btn btn-dark">Tìm kiếm</button>
+    <a href="@Url.Action("AllUser", "Student")" class="btn btn-secondary">Đặt lại</a>
 </form>
 
 <table class="table table-bordered table-striped">

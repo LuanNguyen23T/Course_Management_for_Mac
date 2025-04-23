@@ -41,6 +41,7 @@ namespace LearnEDU.Controllers
             string level,
             string category,
             string priceRange,
+            bool onlyStarted = false,
             int? page = 1)
         {
             var role = HttpContext.Session.GetString("Role");
@@ -81,6 +82,12 @@ namespace LearnEDU.Controllers
                         courses = courses.Where(c => c.Price > 1000);
                         break;
                 }
+            }
+            
+            // Lọc khóa học đã bắt đầu
+            if (onlyStarted)
+            {
+                courses = courses.Where(c => c.StartDate <= DateTime.Now);
             }
 
             // ✅ Mặc định sắp xếp theo StartDate
@@ -203,9 +210,10 @@ namespace LearnEDU.Controllers
                 .ToList();
 
             ViewBag.CourseName = course.Name;
+            ViewBag.Role = role;
+            ViewBag.CourseId = id;
             return View(enrollments); // 👈 gửi trực tiếp List<Enrollment>
         }
-
 
 
         [HttpPost]
@@ -269,30 +277,37 @@ namespace LearnEDU.Controllers
         }
 
         [HttpPost]
-        public IActionResult Unenroll(int id)
+        public IActionResult Unenroll(int courseId, int studentId)
         {
             var role = HttpContext.Session.GetString("Role");
-            if (role == null )
+            if (role == null)
             {
                 return RedirectToAction("AccessDenied", "Account"); // hoặc về trang Home
             }
-            var studentId = HttpContext.Session.GetInt32("UserId");
-            if (studentId == null) return RedirectToAction("Login", "Account");
 
-            var enrollment = _context.Enrollments.FirstOrDefault(e => e.CourseId == id && e.StudentId == studentId);
+            // Nếu không phải Admin, chỉ cho phép hủy đăng ký của chính mình
+            var currentUserId = HttpContext.Session.GetInt32("UserId");
+            if (role != "Admin" && currentUserId != studentId)
+            {
+                TempData["EnrollError"] = "Bạn không có quyền hủy đăng ký học viên này.";
+                return RedirectToAction("Details", new { id = courseId });
+            }
+
+            var enrollment = _context.Enrollments.FirstOrDefault(e => e.CourseId == courseId && e.StudentId == studentId);
             var student = _context.Students.FirstOrDefault(s => s.Id == studentId);
-            var course = _context.Courses.FirstOrDefault(c => c.Id == id);
+            var course = _context.Courses.FirstOrDefault(c => c.Id == courseId);
 
             if (enrollment == null || student == null || course == null)
             {
                 TempData["EnrollError"] = "Không thể hủy ghi danh.";
-                return RedirectToAction("Details", new { id });
+                return RedirectToAction("EnrolledStudents", new { id = courseId });
             }
 
+            // Nếu khóa học đã bắt đầu, không cho phép hủy đăng ký
             if (DateTime.Now >= course.StartDate)
             {
                 TempData["EnrollError"] = "Khóa học đã bắt đầu. Không thể hủy ghi danh.";
-                return RedirectToAction("Details", new { id });
+                return RedirectToAction("EnrolledStudents", new { id = courseId });
             }
 
             // Hủy ghi danh và hoàn lại tiền
@@ -302,7 +317,7 @@ namespace LearnEDU.Controllers
             _context.SaveChanges();
 
             TempData["EnrollSuccess"] = "Đã hủy ghi danh thành công.";
-            return RedirectToAction("Details", new { id });
+            return RedirectToAction("EnrolledStudents", new { id = courseId });
         }
 
 
