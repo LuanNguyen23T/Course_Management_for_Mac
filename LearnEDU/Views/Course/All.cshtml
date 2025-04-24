@@ -16,7 +16,6 @@
 <h2 class="mb-4">Danh sách khóa học</h2>
 
 <form method="get" class="mb-4">
-    <!-- Hàng đầu tiên: Các trường tìm kiếm -->
     <div class="row g-3">
         <div class="col-md-3">
             <input type="text" name="name" value="@ViewBag.SearchName" class="form-control" placeholder="Tên khóa học" />
@@ -38,7 +37,6 @@
         </div>
     </div>
 
-    <!-- Hàng thứ hai: Các trường tìm kiếm bổ sung và nút -->
     <div class="row g-3 mt-2">
         <div class="col-md-3">
             <select name="category" class="form-select">
@@ -64,7 +62,6 @@
     </div>
 </form>
 
-<!-- 📦 Danh sách Course dạng thẻ -->
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
     @foreach (var course in Model)
     {
@@ -116,7 +113,6 @@
     }
 </div>
 
-<!-- 📄 Phân trang -->
 <div class="mt-4 d-flex justify-content-center">
     @Html.PagedListPager(Model, page => Url.Action("All", new
         {

@@ -349,7 +349,6 @@ namespace LearnEDU.Controllers
             existingStudent.Gender = student.Gender;
             existingStudent.Education = student.Education;
             existingStudent.CurrentBalance = student.CurrentBalance;
-            existingStudent.Role = ViewBag.Role;
 
 
             if (ImageFile == null)

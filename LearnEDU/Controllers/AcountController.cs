@@ -14,11 +14,9 @@ namespace LearnEDU.Controllers
             _context = context;
         }
 
-        // GET: Register
         [HttpGet]
         public IActionResult Register() => View();
 
-        // POST: Register
         [HttpPost]
         public IActionResult Register(Student student)
         {
@@ -27,7 +25,6 @@ namespace LearnEDU.Controllers
             student.DateRegister = DateTime.Now;
             student.CurrentBalance = 0;
             
-            // Sử dụng AsEnumerable() để thực thi truy vấn ngay lập tức
             if (_context.Students.AsEnumerable().Any(s => s.Username == student.Username))
             {
                 ModelState.AddModelError("Username", "Tên đăng nhập đã tồn tại.");
@@ -68,11 +65,9 @@ namespace LearnEDU.Controllers
 
 
 
-        // GET: Login
         [HttpGet]
         public IActionResult Login() => View();
 
-        // POST: Login
         [HttpPost]
         public IActionResult Login(string username, string password)
         {
@@ -80,7 +75,6 @@ namespace LearnEDU.Controllers
 
             if (user != null)
             {
-                // Ghi session
                 HttpContext.Session.SetString("Username", user.Username);
                 HttpContext.Session.SetInt32("UserId", user.Id);
                 HttpContext.Session.SetString("Role", user.Role);

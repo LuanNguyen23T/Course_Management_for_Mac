@@ -17,7 +17,7 @@
         <div class="register-box">
             <h4 class="text-center text-primary mb-4">Đăng ký tài khoản</h4>
             <form asp-action="Register" method="post">
-                <!-- Account Info -->
+
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                 <div class="mb-3 section-title">Thông tin tài khoản</div>
 
@@ -33,7 +33,7 @@
                     <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
 
-                <!-- User Info -->
+
                 <div class="mb-3 section-title">Thông tin cá nhân</div>
 
                 <div class="mb-3">

@@ -17,7 +17,7 @@ namespace LearnEDU.Controllers
             var role = HttpContext.Session.GetString("Role");
             if (role != "Student")
             {
-                return RedirectToAction("AccessDenied", "Account"); // hoặc về trang Home
+                return RedirectToAction("AccessDenied", "Account"); 
             }
 
             var id = HttpContext.Session.GetInt32("UserId");

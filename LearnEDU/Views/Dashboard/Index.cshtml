@@ -4,7 +4,6 @@
 
 <h2 class="mb-4">Thống kê</h2>
 
-<!-- Bộ lọc khoảng thời gian -->
 <form method="get" class="row g-3 mb-4">
     <div class="col-md-4">
         <label for="fromDate">Từ ngày:</label>
@@ -15,14 +14,13 @@
         <input type="date" id="toDate" name="toDate" class="form-control" value="@ViewBag.ToDate" />
     </div>
     <div class="col-md-4 d-flex align-items-end">
-        <button type="submit" class="btn btn-dark w-100">Áp dụng</button> <!-- Đổi màu nút thành đen -->
+        <button type="submit" class="btn btn-dark w-100">Áp dụng</button> 
     </div>
 </form>
 
-<!-- Tổng quan -->
 <div class="row">
     <div class="col-md-6 mb-4">
-        <div class="card bg-dark text-white shadow"> <!-- Đổi màu box thành đen -->
+        <div class="card bg-dark text-white shadow">
             <div class="card-body">
                 <h5 class="card-title">Tổng số học sinh</h5>
                 <p class="display-6">@ViewBag.TotalStudents</p>
@@ -30,7 +28,7 @@
         </div>
     </div>
     <div class="col-md-6 mb-4">
-        <div class="card bg-dark text-white shadow"> <!-- Đổi màu box thành đen -->
+        <div class="card bg-dark text-white shadow"> 
             <div class="card-body">
                 <h5 class="card-title">Tổng số khóa học</h5>
                 <p class="display-6">@ViewBag.TotalCourses</p>
@@ -39,15 +37,33 @@
     </div>
 </div>
 <div class="col-md-6 mb-4">
-    <div class="card bg-dark text-white shadow"> <!-- Đổi màu box thành đen -->
+    <div class="card bg-dark text-white shadow">
         <div class="card-body">
-            <h5 class="card-title">Tổng doanh thu trong khoảng thời gian</h5>
+            <h5 class="card-title">Tổng doanh thu các khoá học</h5>
             <p class="display-6">@ViewBag.TotalRevenue $</p>
         </div>
     </div>
 </div>
 
-<!-- Biểu đồ doanh thu -->
+<h3>Doanh thu theo khóa học</h3>
+<table class="table table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Tên khóa học</th>
+            <th>Tổng doanh thu</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var course in ViewBag.TotalRevenueByCourse)
+        {
+            <tr>
+                <td>@course.CourseName</td>
+                <td>@course.TotalRevenue.ToString("C")</td> 
+            </tr>
+        }
+    </tbody>
+</table>
+
 <div class="mb-4">
     <h5>Biểu đồ doanh thu từng khóa học</h5>
     <canvas id="revenueChart" width="400" height="200"></canvas>
@@ -56,7 +72,6 @@
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        // Lấy dữ liệu từ ViewBag
         const courseNames = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(
             ((IEnumerable<dynamic>)ViewBag.RevenueByCourse).Select(c => c.CourseName)
         ));
@@ -67,7 +82,6 @@
             ((IEnumerable<dynamic>)ViewBag.RevenueByCourse).Select(c => c.Dates)
         ));
 
-        // Vẽ biểu đồ
         const ctx = document.getElementById('revenueChart').getContext('2d');
         const datasets = courseNames.map((courseName, index) => ({
             label: courseName,
@@ -80,7 +94,7 @@
         new Chart(ctx, {
             type: 'line',
             data: {
-                labels: labels[0], // Cột X là ngày
+                labels: labels[0], 
                 datasets: datasets
             },
             options: {

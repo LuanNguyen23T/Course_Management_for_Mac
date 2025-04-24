@@ -40,7 +40,7 @@ namespace LearnEDU.Models
         public string Role { get; set; }
 
         [Range(0, int.MaxValue, ErrorMessage = "Ngân sách không được âm")]
-        [Display(Name = "Ngân sách hiện tại (VNĐ)")]
+        [Display(Name = "Ngân sách hiện tại ($)")]
         public int CurrentBalance { get; set; }
     }
 }

@@ -4,7 +4,6 @@
     ViewData["Title"] = "Chi tiết khóa học";
 }
 
-<!-- Hiển thị thông báo -->
 @if (TempData["EnrollSuccess"] != null)
 {
     <div class="alert alert-success text-center">
@@ -62,7 +61,6 @@
         </div>
     </div>
 
-    <!-- Nút hành động -->
     <div class="card-footer bg-light d-flex justify-content-between align-items-center">
         <a href="@Url.Action("EnrolledStudents", "Course", new { id = Model.Id })" class="btn btn-outline-dark">
             <i class="bi bi-people"></i> Xem học sinh đã đăng ký

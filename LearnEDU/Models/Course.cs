@@ -48,7 +48,7 @@ namespace LearnEDU.Models
 
         public string Content { get; set; }
 
-        public int Duration { get; set; } // sẽ được gán tự động = (EndDate - StartDate).Days
+        public int Duration { get; set; } 
     }
 }
 
