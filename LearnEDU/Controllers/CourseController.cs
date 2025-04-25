@@ -335,7 +335,11 @@ namespace LearnEDU.Controllers
                         Console.WriteLine($"❌ Field '{state.Key}': {error.ErrorMessage}");
                     }
                 }
-
+                ViewBag.Instructors = _context.Courses
+                    .Select(c => c.InstructorName)
+                    .Where(name => !string.IsNullOrEmpty(name)) 
+                    .Distinct() 
+                    .ToList();
                 ViewBag.Categories = GetCategoryList();
                 ViewBag.Levels = GetLevelList();
                 return View(course);

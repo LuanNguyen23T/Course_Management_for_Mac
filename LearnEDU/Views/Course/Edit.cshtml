@@ -59,8 +59,8 @@
     </div>
 
     <div class="mb-3">
-        <label asp-for="InstructorName" class="form-label">Tên giảng viên</label>
-        <select asp-for="InstructorName" class="form-select" asp-items="new SelectList(ViewBag.Instructors)"></select>
+        <label asp-for="InstructorName" class="form-label fw-bold">Tên giảng viên</label> 
+        <input asp-for="InstructorName" class="form-control" type="text" placeholder="Nhập tên giảng viên" />
         <span asp-validation-for="InstructorName" class="text-danger"></span>
     </div>
 

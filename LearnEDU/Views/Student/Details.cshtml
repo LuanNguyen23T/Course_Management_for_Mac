@@ -3,22 +3,22 @@
     ViewData.ModelState.Remove("ImageFile"); 
 }
 @{
-    @if (ViewBag.Role == "Admin")  ViewData["Title"] = "Chi tiết thông tin Admin";
+    @if (ViewBag.Role == "Admin")  ViewData["Title"] = "Chi tiết thông tin";
     else ViewData["Title"] = "Chi tiết thông tin học sinh";
 }
 
 @if (ViewBag.Role == "Admin"){
-    <h2>Chi tiết thông tin Admin</h2>
+    <h2>Chi tiết thông tin </h2>
 }
 else{
-    <h2>Chi tiết thông tin học sinh</h2>
+    <h2>Chi tiết thông tin </h2>
 }
 
 
 <form asp-action="Details" method="post" enctype="multipart/form-data">
     <input type="hidden" asp-for="Id" />
 
-    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div> <!-- Hiển thị lỗi không có thẻ ul -->
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div> 
 
     <div class="row">
         @if (ViewBag.Role == "Admin")

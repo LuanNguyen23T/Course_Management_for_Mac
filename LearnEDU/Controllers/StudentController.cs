@@ -287,7 +287,7 @@ namespace LearnEDU.Controllers
                 return RedirectToAction("AccessDenied", "Account"); 
             }
             ModelState.Remove("ImageFile");
-            ModelState.Remove("Role");
+            //ModelState.Remove("Role");
             if (!ModelState.IsValid)
             {
                 Console.WriteLine("❌ ModelState Invalid - Các lỗi gồm:");
@@ -338,6 +338,11 @@ namespace LearnEDU.Controllers
             existingStudent.Gender = student.Gender;
             existingStudent.Education = student.Education;
             existingStudent.CurrentBalance = student.CurrentBalance;
+            
+            if (role == "Admin")
+            {
+                existingStudent.Role = student.Role;
+            }
 
 
             if (ImageFile == null)
