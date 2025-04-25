@@ -32,7 +32,7 @@ namespace LearnEDU.Controllers
             Console.WriteLine("Role: " + role);
             if (role ==null)
             {
-                return RedirectToAction("AccessDenied", "Account"); // hoặc về trang Home
+                return RedirectToAction("AccessDenied", "Account"); 
             }
             var student = _context.Students.FirstOrDefault(s => s.Id == id);
             if (student == null)
@@ -50,7 +50,7 @@ namespace LearnEDU.Controllers
             var role = HttpContext.Session.GetString("Role");
             if (role != "Admin")
             {
-                return RedirectToAction("AccessDenied", "Account"); // hoặc về trang Home
+                return RedirectToAction("AccessDenied", "Account"); 
             }
             var student = _context.Students.FirstOrDefault(s => s.Id == id);
             if (student == null)
@@ -58,7 +58,6 @@ namespace LearnEDU.Controllers
                 return NotFound();
             }
 
-            // Không cho phép xóa Admin
             if (student.Role == "Admin")
             {
                 TempData["Error"] = "Không thể xóa tài khoản Admin.";
@@ -84,7 +83,7 @@ namespace LearnEDU.Controllers
             var role = HttpContext.Session.GetString("Role");
             if (role != "Admin")
             {
-                return RedirectToAction("AccessDenied", "Account"); // hoặc về trang Home
+                return RedirectToAction("AccessDenied", "Account"); 
             }
             ViewBag.IsAddAdmin = true;
             return View("Add");
@@ -96,12 +95,11 @@ namespace LearnEDU.Controllers
             var role = HttpContext.Session.GetString("Role");
             if (role != "Admin")
             {
-                return RedirectToAction("AccessDenied", "Account"); // hoặc về trang Home
+                return RedirectToAction("AccessDenied", "Account"); 
             }
             ModelState.Remove("ImageFile");
             ModelState.Remove("Role");
 
-            // Kiểm tra trùng Username & Email
             if (_context.Students.Any(s => s.Username == student.Username))
                 ModelState.AddModelError("Username", "Tên đăng nhập đã được sử dụng.");
             if (_context.Students.Any(s => s.Email == student.Email))
@@ -154,12 +152,11 @@ namespace LearnEDU.Controllers
             var role = HttpContext.Session.GetString("Role");
             if (role != "Admin")
             {
-                return RedirectToAction("AccessDenied", "Account"); // hoặc về trang Home
+                return RedirectToAction("AccessDenied", "Account"); 
             }
             ModelState.Remove("DateRegister");
             ModelState.Remove("Role");
 
-            // Kiểm tra trùng Username & Email
             if (_context.Students.Any(s => s.Username == student.Username))
                 ModelState.AddModelError("Username", "Tên đăng nhập đã được sử dụng.");
             if (_context.Students.Any(s => s.Email == student.Email))
@@ -214,11 +211,10 @@ namespace LearnEDU.Controllers
             var role = HttpContext.Session.GetString("Role");
             if (role != "Admin")
             {
-                return RedirectToAction("AccessDenied", "Account"); // hoặc về trang Home
+                return RedirectToAction("AccessDenied", "Account"); 
             }
             var students = _context.Students.AsQueryable();
             students = students.Where(s => s.Role == "Student");
-            // --- Filter (như trước) ---
             if (!string.IsNullOrEmpty(name))
                 students = students.Where(s => (s.FirstName + " " + s.LastName).ToLower().Contains(name.ToLower().Trim()));
 
@@ -237,10 +233,8 @@ namespace LearnEDU.Controllers
             if (!string.IsNullOrEmpty(username))
                 students = students.Where(s => s.Username.ToLower().Contains(username.ToLower().Trim()));
 
-            // --- Sắp xếp mặc định theo tên (alphabet) ---
             students = students.OrderBy(s => s.LastName).ThenBy(s => s.FirstName);
 
-            // --- Paging ---
             int pageSize = 10;
             int pageNumber = page ?? 1;
             var pagedList = students.ToPagedList(pageNumber, pageSize);
@@ -253,11 +247,10 @@ namespace LearnEDU.Controllers
             var rolee = HttpContext.Session.GetString("Role");
             if (rolee != "Admin")
             {
-                return RedirectToAction("AccessDenied", "Account"); // hoặc về trang Home
+                return RedirectToAction("AccessDenied", "Account"); 
             }
-            var students = _context.Students.AsQueryable(); //Ban dau moi hien thi trang , neu k co thi doc toan bo danh sach
+            var students = _context.Students.AsQueryable(); 
 
-            //Nếu trống thì những bước lọc này được bỏ qua
             if (!string.IsNullOrEmpty(username))
                 students = students.Where(s => s.Username.Contains(username));
 
@@ -273,10 +266,8 @@ namespace LearnEDU.Controllers
             if (!string.IsNullOrEmpty(role))
                 students = students.Where(s => s.Role == role);
 
-            // --- Sắp xếp mặc định theo Role ---
              students = students.OrderBy(s => s.Role).ThenBy(s => s.Username);
 
-            // Gán ViewBag giữ filter
             ViewBag.Username = username;
             ViewBag.Password = password;
             ViewBag.Email = email;
@@ -293,7 +284,7 @@ namespace LearnEDU.Controllers
             var role = HttpContext.Session.GetString("Role");
             if (role == null)
             {
-                return RedirectToAction("AccessDenied", "Account"); // hoặc về trang Home
+                return RedirectToAction("AccessDenied", "Account"); 
             }
             ModelState.Remove("ImageFile");
             ModelState.Remove("Role");
@@ -318,7 +309,6 @@ namespace LearnEDU.Controllers
                 return NotFound();
             }
 
-            // Kiểm tra trùng tên đăng nhập
             bool usernameExists = _context.Students.Any(s => s.Username == student.Username && s.Id != student.Id);
             if (usernameExists)
             {
@@ -333,9 +323,8 @@ namespace LearnEDU.Controllers
                 return View(student);
             }
 
-            // Cập nhật các trường cơ bản
             existingStudent.Username = student.Username;
-            if (!string.IsNullOrWhiteSpace(student.Password)) //Neu nguoi dung k edit lai pass thi van giu nguyen pass cho ho
+            if (!string.IsNullOrWhiteSpace(student.Password)) 
             {
                 existingStudent.Password = student.Password;
             }

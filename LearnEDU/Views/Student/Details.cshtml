@@ -1,6 +1,6 @@
 ﻿@model LearnEDU.Models.Student
 @{
-    ViewData.ModelState.Remove("ImageFile"); // Bỏ lỗi validation bắt buộc cho ảnh
+    ViewData.ModelState.Remove("ImageFile"); 
 }
 @{
     @if (ViewBag.Role == "Admin")  ViewData["Title"] = "Chi tiết thông tin Admin";

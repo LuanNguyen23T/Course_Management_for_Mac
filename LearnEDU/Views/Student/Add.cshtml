@@ -6,49 +6,49 @@
 <h3>@(ViewBag.IsAddAdmin == true ? "Thêm Admin" : "Thêm học sinh")</h3>
 
 <form asp-action="@(ViewBag.IsAddAdmin == true ? "AddAdmin" : "Add")" method="post" enctype="multipart/form-data">
-    <div class="row gy-3"> <!-- Sử dụng gy-3 để tăng khoảng cách dòng -->
+    <div class="row gy-3"> 
         <div class="col-md-6">
-            <label asp-for="Username" class="fw-bold">Tên Đăng Nhập</label> <!-- In đậm -->
+            <label asp-for="Username" class="fw-bold">Tên Đăng Nhập</label> 
             <input asp-for="Username" class="form-control" />
             <span asp-validation-for="Username" class="text-danger"></span> 
         </div>
         <div class="col-md-6">
-            <label asp-for="Password" class="fw-bold">Mật Khẩu</label> <!-- In đậm -->
+            <label asp-for="Password" class="fw-bold">Mật Khẩu</label> 
             <input asp-for="Password" type="password" class="form-control" />
             <span asp-validation-for="Password" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="FirstName" class="fw-bold">Họ lót</label> <!-- In đậm -->
+            <label asp-for="FirstName" class="fw-bold">Họ lót</label> 
             <input asp-for="FirstName" class="form-control" />
             <span asp-validation-for="FirstName" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="LastName" class="fw-bold">Tên</label> <!-- In đậm -->
+            <label asp-for="LastName" class="fw-bold">Tên</label> 
             <input asp-for="LastName" class="form-control" />
             <span asp-validation-for="LastName" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="Email" class="fw-bold">Email</label> <!-- In đậm -->
+            <label asp-for="Email" class="fw-bold">Email</label> 
             <input asp-for="Email" type="email" class="form-control" />
             <span asp-validation-for="Email" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="Phone" class="fw-bold">Số điện thoại</label> <!-- In đậm -->
+            <label asp-for="Phone" class="fw-bold">Số điện thoại</label> 
             <input asp-for="Phone" class="form-control" />
             <span asp-validation-for="Phone" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="Address" class="fw-bold">Địa chỉ</label> <!-- In đậm -->
+            <label asp-for="Address" class="fw-bold">Địa chỉ</label> 
             <input asp-for="Address" class="form-control" />
             <span asp-validation-for="Address" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="DateOfBirth" class="fw-bold">Ngày sinh</label> <!-- In đậm -->
+            <label asp-for="DateOfBirth" class="fw-bold">Ngày sinh</label> 
             <input asp-for="DateOfBirth" type="date" class="form-control" />
             <span asp-validation-for="DateOfBirth" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="Gender" class="fw-bold">Giới tính</label> <!-- In đậm -->
+            <label asp-for="Gender" class="fw-bold">Giới tính</label> 
             <select asp-for="Gender" class="form-control">
                 <option value="">-- Select Gender --</option>
                 <option>Nam</option>
@@ -57,17 +57,16 @@
             <span asp-validation-for="Gender" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="Education" class="fw-bold">Trường học</label> <!-- In đậm -->
+            <label asp-for="Education" class="fw-bold">Trường học</label> 
             <input asp-for="Education" class="form-control" />
             <span asp-validation-for="Education" class="text-danger"></span>
         </div>
         <div class="col-md-6">
-            <label asp-for="Image" class="fw-bold">Ảnh</label> <!-- In đậm -->
-            <label for="ImageFile" class="fw-bold">Upload Image</label> <!-- In đậm -->
+            <label asp-for="Image" class="fw-bold">Ảnh</label> 
+            <label for="ImageFile" class="fw-bold">Upload Image</label> 
             <input type="file" name="ImageFile" class="form-control" />
         </div>
     </div>
-    <!-- GUI ROLE VE CHO HTTP POST ADD -->
     <input type="hidden" name="Role" value="@(ViewBag.IsAddAdmin == true ? "Admin" : "Student")" />
 
     <br />
